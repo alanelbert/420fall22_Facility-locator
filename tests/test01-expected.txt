@@ -1,0 +1,500 @@
+[Bucket size = 2. Tests deletion]
+initialize: bucket-size = 2 bounding-box = [(0.0,0.0),(10.0,10.0)] capacity = 1
+insert-later(ATL): okay {Atlanta, (1.0,5.0)}
+insert-later(JFK): okay {New York, (9.0,4.0)}
+insert-later(BWI): okay {Baltimore, (8.0,8.0)}
+insert-later(SEA): okay {Seattle, (5.0,5.0)}
+insert-later(SFO): okay {San Francisco, (1.0,9.0)}
+insert-later(ORD): okay {Chicago, (2.0,6.0)}
+insert-later(DFW): okay {Dallas-Fort Worth, (3.0,8.0)}
+insert-later(DCA): okay {Washington, (6.0,7.0)}
+insert-later(LAX): okay {Los Angeles, (4.0,2.0)}
+insert-later(IAD): okay {Dulles, (3.0,4.0)}
+insert-later(PVD): okay {Providence, (9.0,2.0)}
+insert-later(LAS): okay {Las Vegas, (1.0,2.0)}
+insert-later(MCO): okay {Orlando, (6.0,3.0)}
+[Bulk-inserting 13 points]
+bulk-insert[13]: successful
+size: 13
+list:
+  (x=4.0)
+  (y=4.0)
+  (x=7.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  [ {DCA: (6.0,7.0)} {SEA: (5.0,5.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  (y=8.0)
+  [ {DFW: (3.0,8.0)} {SFO: (1.0,9.0)} ]
+  [ {ORD: (2.0,6.0)} ]
+  (y=4.0)
+  [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | | (x=7.0)
+  | | | [ {DCA: (6.0,7.0)} {SEA: (5.0,5.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | | [ {DFW: (3.0,8.0)} {SFO: (1.0,9.0)} ]
+  | | (y=8.0)
+  | | | [ {ORD: (2.0,6.0)} ]
+  | (y=5.5)
+  | | | [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+find(2.0,6.0): ORD
+delete(ORD): successful
+size: 12
+list:
+  (x=4.0)
+  (y=4.0)
+  (x=7.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  [ {DCA: (6.0,7.0)} {SEA: (5.0,5.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} {SFO: (1.0,9.0)} ]
+  (y=4.0)
+  [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | | (x=7.0)
+  | | | [ {DCA: (6.0,7.0)} {SEA: (5.0,5.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} {SFO: (1.0,9.0)} ]
+  | (y=5.5)
+  | | | [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+find(2.0,6.0): [not found]
+delete(SFO): successful
+size: 11
+list:
+  (x=4.0)
+  (y=4.0)
+  (x=7.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  [ {DCA: (6.0,7.0)} {SEA: (5.0,5.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  (y=4.0)
+  [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | | (x=7.0)
+  | | | [ {DCA: (6.0,7.0)} {SEA: (5.0,5.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | | [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+delete(SEA): successful
+size: 10
+list:
+  (x=4.0)
+  (y=4.0)
+  (x=7.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  [ {DCA: (6.0,7.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  (y=4.0)
+  [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | | (x=7.0)
+  | | | [ {DCA: (6.0,7.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} {PVD: (9.0,2.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | | [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+delete(PVD): successful
+size: 9
+list:
+  (x=4.0)
+  (y=4.0)
+  (x=7.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  [ {DCA: (6.0,7.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  (y=4.0)
+  [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | | (x=7.0)
+  | | | [ {DCA: (6.0,7.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | | [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+[This is the first deletion that causes a bucket to become empty]
+delete(DCA): successful
+size: 8
+list:
+  (x=4.0)
+  (y=4.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  (y=4.0)
+  [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | | [ {ATL: (1.0,5.0)} {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+delete(ATL): successful
+size: 7
+list:
+  (x=4.0)
+  (y=4.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  (y=4.0)
+  [ {IAD: (3.0,4.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | | [ {IAD: (3.0,4.0)} ]
+  | | (y=4.0)
+  | | | [ {LAS: (1.0,2.0)} ]
+delete(LAS): successful
+size: 6
+list:
+  (x=4.0)
+  (y=4.0)
+  [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  [ {IAD: (3.0,4.0)} ]
+Tree structure:
+  | | [ {BWI: (8.0,8.0)} {JFK: (9.0,4.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | [ {IAD: (3.0,4.0)} ]
+[This should throw and nonexistent point exception]
+delete-point(2.0,6.0): Failure due to exception: "Deletion of nonexistent point"
+size: 6
+delete(BWI): successful
+size: 5
+list:
+  (x=4.0)
+  (y=4.0)
+  [ {JFK: (9.0,4.0)} ]
+  (x=6.0)
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAX: (4.0,2.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  [ {IAD: (3.0,4.0)} ]
+Tree structure:
+  | | [ {JFK: (9.0,4.0)} ]
+  | (y=4.0)
+  | | | [ {MCO: (6.0,3.0)} ]
+  | | (x=6.0)
+  | | | [ {LAX: (4.0,2.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | [ {IAD: (3.0,4.0)} ]
+delete(LAX): successful
+size: 4
+list:
+  (x=4.0)
+  (y=4.0)
+  [ {JFK: (9.0,4.0)} ]
+  [ {MCO: (6.0,3.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  [ {IAD: (3.0,4.0)} ]
+Tree structure:
+  | | [ {JFK: (9.0,4.0)} ]
+  | (y=4.0)
+  | | [ {MCO: (6.0,3.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | [ {IAD: (3.0,4.0)} ]
+delete(MCO): successful
+size: 3
+list:
+  (x=4.0)
+  [ {JFK: (9.0,4.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  [ {IAD: (3.0,4.0)} ]
+Tree structure:
+  | [ {JFK: (9.0,4.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | [ {IAD: (3.0,4.0)} ]
+[Inserting back 3 previously deleted points]
+insert-later(PVD): okay {Providence, (9.0,2.0)}
+insert-later(LAS): okay {Las Vegas, (1.0,2.0)}
+insert-later(MCO): okay {Orlando, (6.0,3.0)}
+bulk-insert[3]: successful
+delete(JFK): successful
+size: 5
+list:
+  (x=4.0)
+  (x=9.0)
+  [ {PVD: (9.0,2.0)} ]
+  [ {MCO: (6.0,3.0)} ]
+  (y=5.5)
+  [ {DFW: (3.0,8.0)} ]
+  [ {IAD: (3.0,4.0)} {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | [ {PVD: (9.0,2.0)} ]
+  | (x=9.0)
+  | | [ {MCO: (6.0,3.0)} ]
+  (x=4.0)
+  | | [ {DFW: (3.0,8.0)} ]
+  | (y=5.5)
+  | | [ {IAD: (3.0,4.0)} {LAS: (1.0,2.0)} ]
+delete(DFW): successful
+size: 4
+list:
+  (x=4.0)
+  (x=9.0)
+  [ {PVD: (9.0,2.0)} ]
+  [ {MCO: (6.0,3.0)} ]
+  [ {IAD: (3.0,4.0)} {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | [ {PVD: (9.0,2.0)} ]
+  | (x=9.0)
+  | | [ {MCO: (6.0,3.0)} ]
+  (x=4.0)
+  | [ {IAD: (3.0,4.0)} {LAS: (1.0,2.0)} ]
+delete(IAD): successful
+size: 3
+list:
+  (x=4.0)
+  (x=9.0)
+  [ {PVD: (9.0,2.0)} ]
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | | [ {PVD: (9.0,2.0)} ]
+  | (x=9.0)
+  | | [ {MCO: (6.0,3.0)} ]
+  (x=4.0)
+  | [ {LAS: (1.0,2.0)} ]
+delete(PVD): successful
+size: 2
+list:
+  (x=4.0)
+  [ {MCO: (6.0,3.0)} ]
+  [ {LAS: (1.0,2.0)} ]
+Tree structure:
+  | [ {MCO: (6.0,3.0)} ]
+  (x=4.0)
+  | [ {LAS: (1.0,2.0)} ]
+delete(LAS): successful
+size: 1
+list:
+  [ {MCO: (6.0,3.0)} ]
+Tree structure:
+  [ {MCO: (6.0,3.0)} ]
+delete(MCO): successful
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]
+[This should throw and nonexistent point exception]
+delete-point(6.0,3.0): Failure due to exception: "Deletion of nonexistent point"
+clear: successful
+insert-later(LHR): okay {London, (1.0,9.0)}
+insert-later(CDG): okay {Paris, (2.0,5.0)}
+insert-later(FRA): okay {Frankfort, (4.0,5.0)}
+insert-later(BKK): okay {Bangkok, (5.0,3.0)}
+insert-later(PEK): okay {Beijing, (5.0,9.0)}
+insert-later(HKG): okay {Hong Kong, (6.0,5.0)}
+insert-later(NRT): okay {Tokyo, (8.0,5.0)}
+insert-later(ICN): okay {Seoul, (9.0,1.0)}
+[Bulk-inserting 8 points]
+bulk-insert[8]: successful
+size: 8
+list:
+  (x=5.0)
+  (y=5.0)
+  [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (y=5.0)
+  [ {FRA: (4.0,5.0)} {LHR: (1.0,9.0)} ]
+  [ {BKK: (5.0,3.0)} {CDG: (2.0,5.0)} ]
+Tree structure:
+  | | [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  | (y=5.0)
+  | | [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (x=5.0)
+  | | [ {FRA: (4.0,5.0)} {LHR: (1.0,9.0)} ]
+  | (y=5.0)
+  | | [ {BKK: (5.0,3.0)} {CDG: (2.0,5.0)} ]
+[The next deletions involve points that lie on the splitting line]
+delete(CDG): successful
+size: 7
+list:
+  (x=5.0)
+  (y=5.0)
+  [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (y=5.0)
+  [ {FRA: (4.0,5.0)} {LHR: (1.0,9.0)} ]
+  [ {BKK: (5.0,3.0)} ]
+Tree structure:
+  | | [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  | (y=5.0)
+  | | [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (x=5.0)
+  | | [ {FRA: (4.0,5.0)} {LHR: (1.0,9.0)} ]
+  | (y=5.0)
+  | | [ {BKK: (5.0,3.0)} ]
+delete(FRA): successful
+size: 6
+list:
+  (x=5.0)
+  (y=5.0)
+  [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (y=5.0)
+  [ {LHR: (1.0,9.0)} ]
+  [ {BKK: (5.0,3.0)} ]
+Tree structure:
+  | | [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  | (y=5.0)
+  | | [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (x=5.0)
+  | | [ {LHR: (1.0,9.0)} ]
+  | (y=5.0)
+  | | [ {BKK: (5.0,3.0)} ]
+delete(BKK): successful
+size: 5
+list:
+  (x=5.0)
+  (y=5.0)
+  [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  [ {LHR: (1.0,9.0)} ]
+Tree structure:
+  | | [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  | (y=5.0)
+  | | [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+  (x=5.0)
+  | [ {LHR: (1.0,9.0)} ]
+delete(LHR): successful
+size: 4
+list:
+  (y=5.0)
+  [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+Tree structure:
+  | [ {NRT: (8.0,5.0)} {PEK: (5.0,9.0)} ]
+  (y=5.0)
+  | [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+delete(NRT): successful
+size: 3
+list:
+  (y=5.0)
+  [ {PEK: (5.0,9.0)} ]
+  [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+Tree structure:
+  | [ {PEK: (5.0,9.0)} ]
+  (y=5.0)
+  | [ {HKG: (6.0,5.0)} {ICN: (9.0,1.0)} ]
+delete(HKG): successful
+size: 2
+list:
+  (y=5.0)
+  [ {PEK: (5.0,9.0)} ]
+  [ {ICN: (9.0,1.0)} ]
+Tree structure:
+  | [ {PEK: (5.0,9.0)} ]
+  (y=5.0)
+  | [ {ICN: (9.0,1.0)} ]
+delete(PEK): successful
+size: 1
+list:
+  [ {ICN: (9.0,1.0)} ]
+Tree structure:
+  [ {ICN: (9.0,1.0)} ]
+delete(ICN): successful
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]

@@ -1,0 +1,41 @@
+[This tests MinK]
+initialize: bucket-size = 1 bounding-box = [(0.0,0.0),(10.0,10.0)] capacity = 3
+minK-add(25.0,SFO): successful
+minK-get-kth: [infinity]
+minK-add(85.0,IAD): successful
+minK-get-kth: [infinity]
+minK-add(53.0,DCA): successful
+minK-get-kth: 85.0
+minK-add(12.0,BWI): successful
+minK-get-kth: 53.0
+minK-add(67.0,JFK): successful
+minK-get-kth: 53.0
+minK-list:
+  BWI
+  SFO
+  DCA
+minK-clear: successful
+minK-add(94.0,New York): successful
+minK-get-kth: [infinity]
+minK-add(88.0,Baltimore): successful
+minK-get-kth: [infinity]
+minK-add(55.0,Seattle): successful
+minK-get-kth: 94.0
+minK-add(19.0,San Francisco): successful
+minK-get-kth: 88.0
+minK-add(26.0,Chicago): successful
+minK-get-kth: 55.0
+minK-add(38.0,Dallas-Fort Worth): successful
+minK-get-kth: 38.0
+minK-add(67.0,Washington): successful
+minK-get-kth: 38.0
+minK-add(42.0,Los Angeles): successful
+minK-get-kth: 38.0
+minK-add(34.0,Dulles): successful
+minK-get-kth: 34.0
+minK-list:
+  San Francisco
+  Chicago
+  Dulles
+minK-clear: successful
+minK-list:

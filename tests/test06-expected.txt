@@ -1,0 +1,724 @@
+[Stress test for k-nearest neighbors]
+initialize: bucket-size = 2 bounding-box = [(-10.0,-180.0),(180.0,180.0)] capacity = 1
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]
+[This requests 3 nearest neighbors from an empty tree]
+k-nearest-neighbor(3,(5.0,5.0)) = [ ]
+insert-later(TMX): okay {TIMIMOUN, (29.0,0.0)}
+insert-later(NRD): okay {NORDERNEY, (53.0,5.0)}
+insert-later(GWT): okay {WESTERLAND, (54.0,8.0)}
+bulk-insert[3]: successful
+size: 3
+list:
+  (x=53.0)
+  [ {GWT: (54.0,8.0)} {NRD: (53.0,5.0)} ]
+  [ {TMX: (29.0,0.0)} ]
+Tree structure:
+  | [ {GWT: (54.0,8.0)} {NRD: (53.0,5.0)} ]
+  (x=53.0)
+  | [ {TMX: (29.0,0.0)} ]
+k-nearest-neighbor(3,(10.0,10.0)) = [ TMX (d=461.0) NRD (d=1874.0) GWT (d=1940.0) ]
+[This requests 20 nearest neighbors from a tree with only 4 points]
+k-nearest-neighbor(20,(10.0,10.0)) = [ TMX (d=461.0) NRD (d=1874.0) GWT (d=1940.0) ]
+insert-later(TLL): okay {TALLINN, (59.0,23.0)}
+insert-later(ENF): okay {ENONTEKIO, (69.0,23.0)}
+insert-later(KEV): okay {HALLI, (63.0,24.0)}
+insert-later(HEM): okay {HELSINKI, (60.0,27.0)}
+insert-later(HEL): okay {HELSINKI, (60.0,24.0)}
+insert-later(BSK): okay {BISKRA, (34.0,5.0)}
+insert-later(ELG): okay {EL GOLEA, (30.0,2.0)}
+insert-later(HTN): okay {HOTAN, (37.0,79.0)}
+insert-later(URC): okay {URUMQI, (43.0,87.0)}
+insert-later(HRB): okay {HARBIN, (45.0,126.0)}
+insert-later(DLC): okay {DALIAN, (38.0,121.0)}
+insert-later(NYI): okay {SUNYANI, (7.0,-2.0)}
+insert-later(TKD): okay {TAKORADI, (4.0,-1.0)}
+insert-later(ABJ): okay {ABIDJAN, (5.0,-3.0)}
+insert-later(BYK): okay {BOUAKE, (7.0,-5.0)}
+insert-later(DJO): okay {DALOA, (6.0,-6.0)}
+insert-later(HGO): okay {KORHOGO, (9.0,-5.0)}
+insert-later(MJC): okay {MAN, (7.0,-7.0)}
+insert-later(JYV): okay {JYVASKYLA, (63.0,25.0)}
+insert-later(KAU): okay {KAUHAVA, (63.0,33.0)}
+insert-later(KEM): okay {KEMI, (65.0,24.0)}
+insert-later(KAJ): okay {KAJAANI, (65.0,27.0)}
+insert-later(LDY): okay {LONDONDERRY, (54.0,-7.0)}
+insert-later(BHX): okay {BIRMINGHAM, (52.0,-1.0)}
+insert-later(CVT): okay {COVENTRY, (52.0,-2.0)}
+insert-later(BNI): okay {BENIN, (5.0,5.0)}
+insert-later(CBQ): okay {CALABAR, (4.0,8.0)}
+insert-later(ENU): okay {ENUGU, (6.0,7.0)}
+insert-later(QUS): okay {GUSAU, (12.0,6.0)}
+insert-later(DJE): okay {DJERBA, (35.0,14.0)}
+insert-later(EBM): okay {EL BORMA, (34.0,14.0)}
+insert-later(SFA): okay {SFAX, (33.0,23.0)}
+insert-later(TOE): okay {TOZEUR, (33.0,14.0)}
+insert-later(LRL): okay {NIATOUGOU, (9.0,1.0)}
+insert-later(LFW): okay {LOME, (6.0,1.0)}
+insert-later(HHN): okay {HAHN, (49.0,7.0)}
+insert-later(MHG): okay {MANNHEIM, (49.0,6.0)}
+insert-later(XFW): okay {HAMBURG, (53.0,9.0)}
+insert-later(KEL): okay {KIEL, (54.0,11.0)}
+insert-later(LBC): okay {LUEBECK, (53.0,10.0)}
+insert-later(EME): okay {EMDEN, (53.0,7.0)}
+insert-later(WVN): okay {WILHELMSHAVEN, (53.0,8.0)}
+insert-later(BMK): okay {BORKUM, (53.0,6.0)}
+insert-later(ENA): okay {KENAI, (60.0,-151.0)}
+insert-later(FAI): okay {FAIRBANKS, (64.0,-146.0)}
+insert-later(FBK): okay {FORT WAINWRIGHT, (64.0,-147.0)}
+insert-later(GAL): okay {GALENA, (64.0,-156.0)}
+bulk-insert[47]: successful
+size: 50
+list:
+  (x=53.0)
+  (y=9.5)
+  (y=24.0)
+  (y=26.0)
+  (y=27.0)
+  [ {KAJ: (65.0,27.0)} {KAU: (63.0,33.0)} ]
+  [ {HEM: (60.0,27.0)} ]
+  (x=63.0)
+  [ {JYV: (63.0,25.0)} {KEM: (65.0,24.0)} ]
+  [ {KEV: (63.0,24.0)} ]
+  (x=59.0)
+  (x=60.0)
+  [ {ENF: (69.0,23.0)} {HEL: (60.0,24.0)} ]
+  [ {TLL: (59.0,23.0)} ]
+  [ {KEL: (54.0,11.0)} {LBC: (53.0,10.0)} ]
+  (y=5.0)
+  (y=7.5)
+  (x=53.0)
+  [ {GWT: (54.0,8.0)} {XFW: (53.0,9.0)} ]
+  [ {WVN: (53.0,8.0)} ]
+  (y=6.0)
+  [ {BMK: (53.0,6.0)} {EME: (53.0,7.0)} ]
+  [ {NRD: (53.0,5.0)} ]
+  (y=-147.0)
+  (y=-146.0)
+  [ {FAI: (64.0,-146.0)} {LDY: (54.0,-7.0)} ]
+  [ {FBK: (64.0,-147.0)} ]
+  [ {ENA: (60.0,-151.0)} {GAL: (64.0,-156.0)} ]
+  (y=5.0)
+  (y=14.0)
+  (y=79.0)
+  (y=104.0)
+  [ {DLC: (38.0,121.0)} {HRB: (45.0,126.0)} ]
+  [ {HTN: (37.0,79.0)} {URC: (43.0,87.0)} ]
+  (y=14.0)
+  [ {DJE: (35.0,14.0)} {SFA: (33.0,23.0)} ]
+  [ {EBM: (34.0,14.0)} ]
+  (x=33.0)
+  (x=41.5)
+  [ {HHN: (49.0,7.0)} {MHG: (49.0,6.0)} ]
+  [ {BSK: (34.0,5.0)} {TOE: (33.0,14.0)} ]
+  (x=6.0)
+  [ {ENU: (6.0,7.0)} {QUS: (12.0,6.0)} ]
+  [ {CBQ: (4.0,8.0)} ]
+  (x=7.0)
+  (x=29.0)
+  (x=41.0)
+  [ {BHX: (52.0,-1.0)} {CVT: (52.0,-2.0)} ]
+  [ {ELG: (30.0,2.0)} {TMX: (29.0,0.0)} ]
+  (y=-2.0)
+  [ {LRL: (9.0,1.0)} {NYI: (7.0,-2.0)} ]
+  [ {HGO: (9.0,-5.0)} ]
+  (y=-3.0)
+  (y=0.0)
+  [ {BNI: (5.0,5.0)} {LFW: (6.0,1.0)} ]
+  [ {ABJ: (5.0,-3.0)} {TKD: (4.0,-1.0)} ]
+  (y=-6.0)
+  [ {BYK: (7.0,-5.0)} {DJO: (6.0,-6.0)} ]
+  [ {MJC: (7.0,-7.0)} ]
+Tree structure:
+  | | | | | [ {KAJ: (65.0,27.0)} {KAU: (63.0,33.0)} ]
+  | | | | (y=27.0)
+  | | | | | [ {HEM: (60.0,27.0)} ]
+  | | | (y=26.0)
+  | | | | | [ {JYV: (63.0,25.0)} {KEM: (65.0,24.0)} ]
+  | | | | (x=63.0)
+  | | | | | [ {KEV: (63.0,24.0)} ]
+  | | (y=24.0)
+  | | | | | [ {ENF: (69.0,23.0)} {HEL: (60.0,24.0)} ]
+  | | | | (x=60.0)
+  | | | | | [ {TLL: (59.0,23.0)} ]
+  | | | (x=59.0)
+  | | | | [ {KEL: (54.0,11.0)} {LBC: (53.0,10.0)} ]
+  | (y=9.5)
+  | | | | | [ {GWT: (54.0,8.0)} {XFW: (53.0,9.0)} ]
+  | | | | (x=53.0)
+  | | | | | [ {WVN: (53.0,8.0)} ]
+  | | | (y=7.5)
+  | | | | | [ {BMK: (53.0,6.0)} {EME: (53.0,7.0)} ]
+  | | | | (y=6.0)
+  | | | | | [ {NRD: (53.0,5.0)} ]
+  | | (y=5.0)
+  | | | | | [ {FAI: (64.0,-146.0)} {LDY: (54.0,-7.0)} ]
+  | | | | (y=-146.0)
+  | | | | | [ {FBK: (64.0,-147.0)} ]
+  | | | (y=-147.0)
+  | | | | [ {ENA: (60.0,-151.0)} {GAL: (64.0,-156.0)} ]
+  (x=53.0)
+  | | | | | [ {DLC: (38.0,121.0)} {HRB: (45.0,126.0)} ]
+  | | | | (y=104.0)
+  | | | | | [ {HTN: (37.0,79.0)} {URC: (43.0,87.0)} ]
+  | | | (y=79.0)
+  | | | | | [ {DJE: (35.0,14.0)} {SFA: (33.0,23.0)} ]
+  | | | | (y=14.0)
+  | | | | | [ {EBM: (34.0,14.0)} ]
+  | | (y=14.0)
+  | | | | | [ {HHN: (49.0,7.0)} {MHG: (49.0,6.0)} ]
+  | | | | (x=41.5)
+  | | | | | [ {BSK: (34.0,5.0)} {TOE: (33.0,14.0)} ]
+  | | | (x=33.0)
+  | | | | | [ {ENU: (6.0,7.0)} {QUS: (12.0,6.0)} ]
+  | | | | (x=6.0)
+  | | | | | [ {CBQ: (4.0,8.0)} ]
+  | (y=5.0)
+  | | | | | [ {BHX: (52.0,-1.0)} {CVT: (52.0,-2.0)} ]
+  | | | | (x=41.0)
+  | | | | | [ {ELG: (30.0,2.0)} {TMX: (29.0,0.0)} ]
+  | | | (x=29.0)
+  | | | | | [ {LRL: (9.0,1.0)} {NYI: (7.0,-2.0)} ]
+  | | | | (y=-2.0)
+  | | | | | [ {HGO: (9.0,-5.0)} ]
+  | | (x=7.0)
+  | | | | | [ {BNI: (5.0,5.0)} {LFW: (6.0,1.0)} ]
+  | | | | (y=0.0)
+  | | | | | [ {ABJ: (5.0,-3.0)} {TKD: (4.0,-1.0)} ]
+  | | | (y=-3.0)
+  | | | | | [ {BYK: (7.0,-5.0)} {DJO: (6.0,-6.0)} ]
+  | | | | (y=-6.0)
+  | | | | | [ {MJC: (7.0,-7.0)} ]
+k-nearest-neighbor(1,(7.0,-7.0)) = [ MJC (d=0.0) ]
+k-nearest-neighbor(2,(60.0,25.0)) = [ HEL (d=1.0) HEM (d=4.0) ]
+k-nearest-neighbor(3,(63.0,44.0)) = [ KAU (d=121.0) KAJ (d=293.0) HEM (d=298.0) ]
+k-nearest-neighbor(4,(61.0,30.0)) = [ HEM (d=10.0) KAU (d=13.0) KAJ (d=25.0)
+    JYV (d=29.0) ]
+k-nearest-neighbor(5,(100.0,27.0)) = [ ENF (d=977.0) KAJ (d=1225.0) KEM (d=1234.0)
+    JYV (d=1373.0) KEV (d=1378.0) ]
+k-nearest-neighbor(10,(-12.0,-188.0)) = [ ENA (d=6553.0) GAL (d=6800.0) FBK (d=7457.0)
+    FAI (d=7540.0) MJC (d=33122.0) DJO (d=33448.0) BYK (d=33850.0) HGO (d=33930.0)
+    ABJ (d=34514.0) NYI (d=34957.0) ]
+k-nearest-neighbor(20,(52.0,-3.0)) = [ CVT (d=1.0) BHX (d=4.0) LDY (d=20.0)
+    NRD (d=65.0) BMK (d=82.0) MHG (d=90.0) EME (d=101.0) HHN (d=109.0)
+    WVN (d=122.0) GWT (d=125.0) XFW (d=145.0) LBC (d=170.0) KEL (d=200.0)
+    BSK (d=388.0) ELG (d=509.0) TMX (d=538.0) DJE (d=578.0) EBM (d=613.0)
+    TOE (d=650.0) TLL (d=725.0) ]
+k-nearest-neighbor(30,(70.0,3.0)) = [ GWT (d=281.0) NRD (d=293.0) BMK (d=298.0)
+    EME (d=305.0) WVN (d=314.0) KEL (d=320.0) XFW (d=325.0) LBC (d=338.0)
+    BHX (d=340.0) CVT (d=349.0) LDY (d=356.0) ENF (d=401.0) MHG (d=450.0)
+    HHN (d=457.0) KEM (d=466.0) KEV (d=490.0) TLL (d=521.0) JYV (d=533.0)
+    HEL (d=541.0) KAJ (d=601.0) HEM (d=676.0) KAU (d=949.0) BSK (d=1300.0)
+    DJE (d=1346.0) EBM (d=1417.0) TOE (d=1490.0) ELG (d=1601.0) TMX (d=1690.0)
+    SFA (d=1769.0) QUS (d=3373.0) ]
+k-nearest-neighbor(40,(40.0,-20.0)) = [ LDY (d=365.0) CVT (d=468.0) BHX (d=505.0)
+    TMX (d=521.0) ELG (d=584.0) BSK (d=661.0) MHG (d=757.0) NRD (d=794.0)
+    HHN (d=810.0) BMK (d=845.0) EME (d=898.0) WVN (d=953.0) GWT (d=980.0)
+    XFW (d=1010.0) LBC (d=1069.0) KEL (d=1157.0) DJE (d=1181.0) HGO (d=1186.0)
+    EBM (d=1192.0) TOE (d=1205.0) MJC (d=1258.0) BYK (d=1314.0) DJO (d=1352.0)
+    LRL (d=1402.0) NYI (d=1413.0) QUS (d=1460.0) ABJ (d=1514.0) LFW (d=1597.0)
+    TKD (d=1657.0) BNI (d=1850.0) ENU (d=1885.0) SFA (d=1898.0) CBQ (d=2080.0)
+    TLL (d=2210.0) HEL (d=2336.0) KEV (d=2465.0) JYV (d=2554.0) KEM (d=2561.0)
+    HEM (d=2609.0) ENF (d=2690.0) ]
+k-nearest-neighbor(50,(16.0,5.0)) = [ QUS (d=17.0) LRL (d=65.0) ENU (d=104.0)
+    LFW (d=116.0) BNI (d=121.0) NYI (d=130.0) HGO (d=149.0) CBQ (d=153.0)
+    TKD (d=180.0) BYK (d=181.0) ABJ (d=185.0) TMX (d=194.0) ELG (d=205.0)
+    DJO (d=221.0) MJC (d=225.0) BSK (d=324.0) TOE (d=370.0) EBM (d=405.0)
+    DJE (d=442.0) SFA (d=613.0) MHG (d=1090.0) HHN (d=1093.0) BHX (d=1332.0)
+    CVT (d=1345.0) NRD (d=1369.0) BMK (d=1370.0) EME (d=1373.0) WVN (d=1378.0)
+    XFW (d=1385.0) LBC (d=1394.0) GWT (d=1453.0) KEL (d=1480.0) LDY (d=1588.0)
+    TLL (d=2173.0) HEL (d=2297.0) HEM (d=2420.0) KEV (d=2570.0) JYV (d=2609.0)
+    KEM (d=2762.0) KAJ (d=2885.0) KAU (d=2993.0) ENF (d=3133.0) HTN (d=5917.0)
+    URC (d=7453.0) DLC (d=13940.0) HRB (d=15482.0) FAI (d=25105.0) FBK (d=25408.0)
+    ENA (d=26272.0) GAL (d=28225.0) ]
+insert-later(GKN): okay {GULKANA, (62.0,-145.0)}
+insert-later(SGY): okay {SKAGWAY, (59.0,-135.0)}
+insert-later(HOM): okay {HOMER, (59.0,-151.0)}
+insert-later(ILI): okay {ILIAMNA, (59.0,-154.0)}
+insert-later(UTO): okay {INDIAN MOUNTAINS, (65.0,-153.0)}
+insert-later(NGB): okay {NINBO, (29.0,121.0)}
+insert-later(NKG): okay {NANJING, (31.0,118.0)}
+insert-later(HFE): okay {HEFEI, (31.0,117.0)}
+insert-later(TAO): okay {QINGDAO, (36.0,120.0)}
+insert-later(SHA): okay {SHANGHAI, (31.0,121.0)}
+insert-later(YNT): okay {YANTAI, (37.0,121.0)}
+insert-later(CKG): okay {CHONGQING, (29.0,106.0)}
+insert-later(LXA): okay {LHASA, (0.0,0.0)}
+insert-later(CTU): okay {CHENGDU, (30.0,103.0)}
+insert-later(HME): okay {HASSI-MESSAOUD, (31.0,6.0)}
+insert-later(INZ): okay {IN SALAH, (27.0,3.0)}
+insert-later(YEV): okay {INUVIK, (68.0,-133.0)}
+insert-later(YFB): okay {IQALUIT, (63.0,-68.0)}
+insert-later(YFC): okay {FREDERICTON, (45.0,-66.0)}
+insert-later(IVL): okay {IVALO, (68.0,27.0)}
+insert-later(JOE): okay {JOENSUU, (62.0,29.0)}
+insert-later(GKA): okay {GOROKA, (-6.0,145.0)}
+insert-later(MAG): okay {MADANG, (-5.0,145.0)}
+insert-later(HGU): okay {MOUNT HAGEN, (-5.0,144.0)}
+insert-later(LAE): okay {NADZAB, (-6.0,146.0)}
+insert-later(POM): okay {PORT MORESBY, (-9.0,147.0)}
+insert-later(WWK): okay {WEWAK, (-3.0,143.0)}
+insert-later(VEY): okay {VESTMANNAEYJAR, (63.0,-20.0)}
+insert-later(YAM): okay {SAULT SAINTE MARIE, (46.0,-84.0)}
+insert-later(YAV): okay {WINNIPEG, (50.0,-97.0)}
+insert-later(YAW): okay {HALIFAX, (44.0,-63.0)}
+insert-later(YAY): okay {ST. ANTHONY, (51.0,-56.0)}
+insert-later(YAZ): okay {TOFINO, (49.0,-125.0)}
+insert-later(YBB): okay {PELLY BAY, (68.0,-89.0)}
+insert-later(YDQ): okay {DAWSON CREEK, (55.0,-120.0)}
+insert-later(GHA): okay {GHARDAIA, (32.0,3.0)}
+insert-later(PKO): okay {PARAKOU, (9.0,2.0)}
+insert-later(OUA): okay {OUAGADOUGOU, (12.0,-1.0)}
+insert-later(BOY): okay {BOBO-DIOULASSO, (11.0,-3.0)}
+insert-later(ACC): okay {ACCRA, (5.0,0.0)}
+insert-later(TML): okay {TAMALE, (9.0,0.0)}
+insert-later(GLO): okay {GOLOUCHESTERSHIRE, (51.0,-2.0)}
+insert-later(OGX): okay {OUARGLA, (31.0,5.0)}
+insert-later(IAM): okay {ZARZAITINE, (28.0,9.0)}
+insert-later(COO): okay {COTONOU, (6.0,2.0)}
+insert-later(TLM): okay {TLEMCEN, (35.0,-1.0)}
+insert-later(ORN): okay {ORAN, (35.0,2.0)}
+insert-later(MUW): okay {GHRISS, (35.0,3.0)}
+insert-later(AZR): okay {ADRAR, (27.0,1.0)}
+insert-later(TGR): okay {TOUGGOURT, (32.0,14.0)}
+insert-later(LOO): okay {LAGHOUAT, (33.0,2.0)}
+insert-later(XIC): okay {XICHANG, (27.0,102.0)}
+insert-later(KHG): okay {KASHI, (39.0,76.0)}
+insert-later(QAS): okay {ECH-CHELIFF, (36.0,1.0)}
+insert-later(TAF): okay {ORAN, (35.0,0.0)}
+insert-later(YFO): okay {FLIN FLON, (54.0,-101.0)}
+insert-later(YHM): okay {HAMILTON, (42.0,-79.0)}
+insert-later(YHU): okay {MONTREAL, (45.0,-73.0)}
+insert-later(YHY): okay {HAY RIVER, (60.0,-115.0)}
+insert-later(YHZ): okay {HALIFAX, (44.0,-62.0)}
+insert-later(YIB): okay {ATIKOKAN, (39.0,14.0)}
+insert-later(YIO): okay {POND INLET, (72.0,-77.0)}
+insert-later(YJN): okay {ST. JEAN, (45.0,-72.0)}
+insert-later(YND): okay {GATINEAU, (45.0,-76.0)}
+insert-later(YNM): okay {MATAGAMI, (49.0,-77.0)}
+insert-later(YOC): okay {OLD CROW, (67.0,-139.0)}
+insert-later(YOD): okay {COLD LAKE, (54.0,-110.0)}
+insert-later(YOJ): okay {HIGH LEVEL, (58.0,-117.0)}
+insert-later(YOW): okay {OTTAWA, (45.0,-75.0)}
+insert-later(YRM): okay {ROCKY MOUNTAIN HOUSE, (52.0,-114.0)}
+insert-later(YRT): okay {RANKIN INLET, (62.0,-92.0)}
+insert-later(YSB): okay {SUDBURY, (46.0,-80.0)}
+insert-later(YSC): okay {SHERBROOKE, (45.0,-71.0)}
+insert-later(YSJ): okay {ST. JOHN, (45.0,-65.0)}
+insert-later(YWA): okay {PETAWAWA, (45.0,-77.0)}
+insert-later(YED): okay {EDMONTON, (53.0,-113.0)}
+insert-later(YEG): okay {EDMONTON, (54.0,-113.0)}
+insert-later(YEK): okay {ESKIMO POINT, (61.0,-94.0)}
+insert-later(YEN): okay {ESTEVAN, (49.0,-102.0)}
+insert-later(YET): okay {EDSON, (53.0,-116.0)}
+insert-later(YEU): okay {EUREKA, (79.0,-85.0)}
+insert-later(YWG): okay {WINNIPEG, (49.0,-97.0)}
+insert-later(YWK): okay {WABUSH, (52.0,-66.0)}
+insert-later(YWL): okay {WILLIAMS LAKE, (52.0,-122.0)}
+insert-later(YWY): okay {WRIGLEY, (38.0,14.0)}
+insert-later(YXC): okay {CRANBROOK, (49.0,-115.0)}
+insert-later(YYU): okay {KAPUSKASING, (49.0,-82.0)}
+insert-later(SPY): okay {SAN PEDRO, (4.0,-6.0)}
+insert-later(ASK): okay {YAMOUSSOUKRO, (6.0,-5.0)}
+insert-later(ABV): okay {ABUJA, (9.0,7.0)}
+insert-later(AKR): okay {AKURE, (7.0,5.0)}
+insert-later(YYW): okay {ARMSTRONG, (50.0,-88.0)}
+insert-later(YYY): okay {MONT JOLI, (48.0,-68.0)}
+insert-later(YYZ): okay {TORONTO, (43.0,-79.0)}
+insert-later(CZL): okay {CONSTANTINE, (36.0,6.0)}
+insert-later(TEE): okay {TEBESSA, (35.0,9.0)}
+insert-later(HRM): okay {TILREMPT, (32.0,2.0)}
+insert-later(TID): okay {TIARET, (35.0,1.0)}
+insert-later(TIN): okay {TINDOUF, (27.0,-8.0)}
+bulk-insert[99]: successful
+size: 149
+list:
+  (x=53.0)
+  (y=9.5)
+  (y=24.0)
+  (y=26.0)
+  (y=27.0)
+  (x=64.0)
+  [ {IVL: (68.0,27.0)} {KAJ: (65.0,27.0)} ]
+  [ {JOE: (62.0,29.0)} {KAU: (63.0,33.0)} ]
+  [ {HEM: (60.0,27.0)} ]
+  (x=63.0)
+  [ {JYV: (63.0,25.0)} {KEM: (65.0,24.0)} ]
+  [ {KEV: (63.0,24.0)} ]
+  (x=59.0)
+  (x=60.0)
+  [ {ENF: (69.0,23.0)} {HEL: (60.0,24.0)} ]
+  [ {TLL: (59.0,23.0)} ]
+  [ {KEL: (54.0,11.0)} {LBC: (53.0,10.0)} ]
+  (y=5.0)
+  (y=7.5)
+  (x=53.0)
+  [ {GWT: (54.0,8.0)} {XFW: (53.0,9.0)} ]
+  [ {WVN: (53.0,8.0)} ]
+  (y=6.0)
+  [ {BMK: (53.0,6.0)} {EME: (53.0,7.0)} ]
+  [ {NRD: (53.0,5.0)} ]
+  (y=-147.0)
+  (y=-146.0)
+  (y=-113.0)
+  (y=-89.0)
+  (y=-72.5)
+  (y=-20.0)
+  [ {LDY: (54.0,-7.0)} {VEY: (63.0,-20.0)} ]
+  [ {YFB: (63.0,-68.0)} ]
+  (y=-85.0)
+  [ {YEU: (79.0,-85.0)} {YIO: (72.0,-77.0)} ]
+  [ {YBB: (68.0,-89.0)} ]
+  (y=-101.0)
+  (y=-94.0)
+  [ {YEK: (61.0,-94.0)} {YRT: (62.0,-92.0)} ]
+  [ {YFO: (54.0,-101.0)} ]
+  [ {YEG: (54.0,-113.0)} {YOD: (54.0,-110.0)} ]
+  (y=-126.5)
+  (x=55.0)
+  (x=58.0)
+  [ {YHY: (60.0,-115.0)} {YOJ: (58.0,-117.0)} ]
+  [ {YDQ: (55.0,-120.0)} ]
+  [ {YED: (53.0,-113.0)} {YET: (53.0,-116.0)} ]
+  (y=-139.0)
+  (x=67.0)
+  [ {YEV: (68.0,-133.0)} {YOC: (67.0,-139.0)} ]
+  [ {SGY: (59.0,-135.0)} ]
+  [ {FAI: (64.0,-146.0)} {GKN: (62.0,-145.0)} ]
+  [ {FBK: (64.0,-147.0)} ]
+  (x=60.0)
+  (x=64.0)
+  [ {GAL: (64.0,-156.0)} {UTO: (65.0,-153.0)} ]
+  [ {ENA: (60.0,-151.0)} ]
+  [ {HOM: (59.0,-151.0)} {ILI: (59.0,-154.0)} ]
+  (y=5.0)
+  (y=14.0)
+  (y=79.0)
+  (y=104.0)
+  (x=29.0)
+  (x=33.5)
+  (x=37.5)
+  [ {DLC: (38.0,121.0)} {HRB: (45.0,126.0)} ]
+  [ {TAO: (36.0,120.0)} {YNT: (37.0,121.0)} ]
+  (y=119.5)
+  [ {NGB: (29.0,121.0)} {SHA: (31.0,121.0)} ]
+  [ {HFE: (31.0,117.0)} {NKG: (31.0,118.0)} ]
+  (y=145.0)
+  (x=-6.0)
+  [ {LAE: (-6.0,146.0)} {MAG: (-5.0,145.0)} ]
+  [ {GKA: (-6.0,145.0)} {POM: (-9.0,147.0)} ]
+  (y=143.0)
+  [ {HGU: (-5.0,144.0)} {WWK: (-3.0,143.0)} ]
+  [ {CKG: (29.0,106.0)} ]
+  (y=94.5)
+  [ {CTU: (30.0,103.0)} {XIC: (27.0,102.0)} ]
+  [ {HTN: (37.0,79.0)} {URC: (43.0,87.0)} ]
+  (y=14.0)
+  (y=14.0)
+  (y=23.0)
+  [ {KHG: (39.0,76.0)} {SFA: (33.0,23.0)} ]
+  [ {YIB: (39.0,14.0)} ]
+  (x=35.0)
+  [ {DJE: (35.0,14.0)} {YWY: (38.0,14.0)} ]
+  [ {TGR: (32.0,14.0)} ]
+  [ {EBM: (34.0,14.0)} ]
+  (x=33.0)
+  (x=41.5)
+  [ {HHN: (49.0,7.0)} {MHG: (49.0,6.0)} ]
+  (y=7.5)
+  [ {TEE: (35.0,9.0)} {TOE: (33.0,14.0)} ]
+  [ {BSK: (34.0,5.0)} {CZL: (36.0,6.0)} ]
+  (x=6.0)
+  (x=12.0)
+  (x=29.5)
+  [ {HME: (31.0,6.0)} {OGX: (31.0,5.0)} ]
+  [ {IAM: (28.0,9.0)} {QUS: (12.0,6.0)} ]
+  (x=7.0)
+  [ {ABV: (9.0,7.0)} {AKR: (7.0,5.0)} ]
+  [ {ENU: (6.0,7.0)} ]
+  [ {CBQ: (4.0,8.0)} ]
+  (x=7.0)
+  (x=29.0)
+  (x=41.0)
+  (y=-76.5)
+  (y=-66.0)
+  (y=-59.0)
+  (y=-2.0)
+  [ {BHX: (52.0,-1.0)} {CVT: (52.0,-2.0)} ]
+  [ {GLO: (51.0,-2.0)} {YAY: (51.0,-56.0)} ]
+  (x=44.5)
+  [ {YSJ: (45.0,-65.0)} {YWK: (52.0,-66.0)} ]
+  [ {YAW: (44.0,-63.0)} {YHZ: (44.0,-62.0)} ]
+  (y=-72.0)
+  (y=-69.5)
+  [ {YFC: (45.0,-66.0)} {YYY: (48.0,-68.0)} ]
+  [ {YJN: (45.0,-72.0)} {YSC: (45.0,-71.0)} ]
+  (y=-75.0)
+  [ {YHU: (45.0,-73.0)} {YOW: (45.0,-75.0)} ]
+  [ {YND: (45.0,-76.0)} ]
+  (y=-88.0)
+  (y=-79.5)
+  (x=44.0)
+  [ {YNM: (49.0,-77.0)} {YWA: (45.0,-77.0)} ]
+  [ {YHM: (42.0,-79.0)} {YYZ: (43.0,-79.0)} ]
+  (y=-83.0)
+  [ {YSB: (46.0,-80.0)} {YYU: (49.0,-82.0)} ]
+  [ {YAM: (46.0,-84.0)} {YYW: (50.0,-88.0)} ]
+  (y=-114.0)
+  (y=-99.5)
+  [ {YAV: (50.0,-97.0)} {YWG: (49.0,-97.0)} ]
+  [ {YEN: (49.0,-102.0)} {YRM: (52.0,-114.0)} ]
+  (y=-122.0)
+  [ {YWL: (52.0,-122.0)} {YXC: (49.0,-115.0)} ]
+  [ {YAZ: (49.0,-125.0)} ]
+  (x=35.0)
+  (y=1.0)
+  (y=2.0)
+  [ {MUW: (35.0,3.0)} {ORN: (35.0,2.0)} ]
+  [ {QAS: (36.0,1.0)} ]
+  (y=0.0)
+  [ {TAF: (35.0,0.0)} {TID: (35.0,1.0)} ]
+  [ {TLM: (35.0,-1.0)} ]
+  (x=32.0)
+  (x=32.0)
+  [ {GHA: (32.0,3.0)} {LOO: (33.0,2.0)} ]
+  [ {HRM: (32.0,2.0)} ]
+  [ {ELG: (30.0,2.0)} {TMX: (29.0,0.0)} ]
+  (y=-2.0)
+  (x=9.0)
+  (x=19.5)
+  [ {AZR: (27.0,1.0)} {INZ: (27.0,3.0)} ]
+  [ {OUA: (12.0,-1.0)} {PKO: (9.0,2.0)} ]
+  (y=0.0)
+  [ {LRL: (9.0,1.0)} {TML: (9.0,0.0)} ]
+  [ {NYI: (7.0,-2.0)} ]
+  (x=11.0)
+  [ {BOY: (11.0,-3.0)} {TIN: (27.0,-8.0)} ]
+  [ {HGO: (9.0,-5.0)} ]
+  (y=-3.0)
+  (y=0.0)
+  (x=5.0)
+  (y=2.0)
+  [ {BNI: (5.0,5.0)} {COO: (6.0,2.0)} ]
+  [ {LFW: (6.0,1.0)} ]
+  [ {ACC: (5.0,0.0)} {LXA: (0.0,0.0)} ]
+  [ {ABJ: (5.0,-3.0)} {TKD: (4.0,-1.0)} ]
+  (y=-6.0)
+  (x=6.0)
+  [ {ASK: (6.0,-5.0)} {BYK: (7.0,-5.0)} ]
+  [ {DJO: (6.0,-6.0)} {SPY: (4.0,-6.0)} ]
+  [ {MJC: (7.0,-7.0)} ]
+Tree structure:
+  | | | | | | [ {IVL: (68.0,27.0)} {KAJ: (65.0,27.0)} ]
+  | | | | | (x=64.0)
+  | | | | | | [ {JOE: (62.0,29.0)} {KAU: (63.0,33.0)} ]
+  | | | | (y=27.0)
+  | | | | | [ {HEM: (60.0,27.0)} ]
+  | | | (y=26.0)
+  | | | | | [ {JYV: (63.0,25.0)} {KEM: (65.0,24.0)} ]
+  | | | | (x=63.0)
+  | | | | | [ {KEV: (63.0,24.0)} ]
+  | | (y=24.0)
+  | | | | | [ {ENF: (69.0,23.0)} {HEL: (60.0,24.0)} ]
+  | | | | (x=60.0)
+  | | | | | [ {TLL: (59.0,23.0)} ]
+  | | | (x=59.0)
+  | | | | [ {KEL: (54.0,11.0)} {LBC: (53.0,10.0)} ]
+  | (y=9.5)
+  | | | | | [ {GWT: (54.0,8.0)} {XFW: (53.0,9.0)} ]
+  | | | | (x=53.0)
+  | | | | | [ {WVN: (53.0,8.0)} ]
+  | | | (y=7.5)
+  | | | | | [ {BMK: (53.0,6.0)} {EME: (53.0,7.0)} ]
+  | | | | (y=6.0)
+  | | | | | [ {NRD: (53.0,5.0)} ]
+  | | (y=5.0)
+  | | | | | | | | | [ {LDY: (54.0,-7.0)} {VEY: (63.0,-20.0)} ]
+  | | | | | | | | (y=-20.0)
+  | | | | | | | | | [ {YFB: (63.0,-68.0)} ]
+  | | | | | | | (y=-72.5)
+  | | | | | | | | | [ {YEU: (79.0,-85.0)} {YIO: (72.0,-77.0)} ]
+  | | | | | | | | (y=-85.0)
+  | | | | | | | | | [ {YBB: (68.0,-89.0)} ]
+  | | | | | | (y=-89.0)
+  | | | | | | | | | [ {YEK: (61.0,-94.0)} {YRT: (62.0,-92.0)} ]
+  | | | | | | | | (y=-94.0)
+  | | | | | | | | | [ {YFO: (54.0,-101.0)} ]
+  | | | | | | | (y=-101.0)
+  | | | | | | | | [ {YEG: (54.0,-113.0)} {YOD: (54.0,-110.0)} ]
+  | | | | | (y=-113.0)
+  | | | | | | | | | [ {YHY: (60.0,-115.0)} {YOJ: (58.0,-117.0)} ]
+  | | | | | | | | (x=58.0)
+  | | | | | | | | | [ {YDQ: (55.0,-120.0)} ]
+  | | | | | | | (x=55.0)
+  | | | | | | | | [ {YED: (53.0,-113.0)} {YET: (53.0,-116.0)} ]
+  | | | | | | (y=-126.5)
+  | | | | | | | | | [ {YEV: (68.0,-133.0)} {YOC: (67.0,-139.0)} ]
+  | | | | | | | | (x=67.0)
+  | | | | | | | | | [ {SGY: (59.0,-135.0)} ]
+  | | | | | | | (y=-139.0)
+  | | | | | | | | [ {FAI: (64.0,-146.0)} {GKN: (62.0,-145.0)} ]
+  | | | | (y=-146.0)
+  | | | | | [ {FBK: (64.0,-147.0)} ]
+  | | | (y=-147.0)
+  | | | | | | [ {GAL: (64.0,-156.0)} {UTO: (65.0,-153.0)} ]
+  | | | | | (x=64.0)
+  | | | | | | [ {ENA: (60.0,-151.0)} ]
+  | | | | (x=60.0)
+  | | | | | [ {HOM: (59.0,-151.0)} {ILI: (59.0,-154.0)} ]
+  (x=53.0)
+  | | | | | | | | [ {DLC: (38.0,121.0)} {HRB: (45.0,126.0)} ]
+  | | | | | | | (x=37.5)
+  | | | | | | | | [ {TAO: (36.0,120.0)} {YNT: (37.0,121.0)} ]
+  | | | | | | (x=33.5)
+  | | | | | | | | [ {NGB: (29.0,121.0)} {SHA: (31.0,121.0)} ]
+  | | | | | | | (y=119.5)
+  | | | | | | | | [ {HFE: (31.0,117.0)} {NKG: (31.0,118.0)} ]
+  | | | | | (x=29.0)
+  | | | | | | | | [ {LAE: (-6.0,146.0)} {MAG: (-5.0,145.0)} ]
+  | | | | | | | (x=-6.0)
+  | | | | | | | | [ {GKA: (-6.0,145.0)} {POM: (-9.0,147.0)} ]
+  | | | | | | (y=145.0)
+  | | | | | | | | [ {HGU: (-5.0,144.0)} {WWK: (-3.0,143.0)} ]
+  | | | | | | | (y=143.0)
+  | | | | | | | | [ {CKG: (29.0,106.0)} ]
+  | | | | (y=104.0)
+  | | | | | | [ {CTU: (30.0,103.0)} {XIC: (27.0,102.0)} ]
+  | | | | | (y=94.5)
+  | | | | | | [ {HTN: (37.0,79.0)} {URC: (43.0,87.0)} ]
+  | | | (y=79.0)
+  | | | | | | | [ {KHG: (39.0,76.0)} {SFA: (33.0,23.0)} ]
+  | | | | | | (y=23.0)
+  | | | | | | | [ {YIB: (39.0,14.0)} ]
+  | | | | | (y=14.0)
+  | | | | | | | [ {DJE: (35.0,14.0)} {YWY: (38.0,14.0)} ]
+  | | | | | | (x=35.0)
+  | | | | | | | [ {TGR: (32.0,14.0)} ]
+  | | | | (y=14.0)
+  | | | | | [ {EBM: (34.0,14.0)} ]
+  | | (y=14.0)
+  | | | | | [ {HHN: (49.0,7.0)} {MHG: (49.0,6.0)} ]
+  | | | | (x=41.5)
+  | | | | | | [ {TEE: (35.0,9.0)} {TOE: (33.0,14.0)} ]
+  | | | | | (y=7.5)
+  | | | | | | [ {BSK: (34.0,5.0)} {CZL: (36.0,6.0)} ]
+  | | | (x=33.0)
+  | | | | | | | [ {HME: (31.0,6.0)} {OGX: (31.0,5.0)} ]
+  | | | | | | (x=29.5)
+  | | | | | | | [ {IAM: (28.0,9.0)} {QUS: (12.0,6.0)} ]
+  | | | | | (x=12.0)
+  | | | | | | | [ {ABV: (9.0,7.0)} {AKR: (7.0,5.0)} ]
+  | | | | | | (x=7.0)
+  | | | | | | | [ {ENU: (6.0,7.0)} ]
+  | | | | (x=6.0)
+  | | | | | [ {CBQ: (4.0,8.0)} ]
+  | (y=5.0)
+  | | | | | | | | | [ {BHX: (52.0,-1.0)} {CVT: (52.0,-2.0)} ]
+  | | | | | | | | (y=-2.0)
+  | | | | | | | | | [ {GLO: (51.0,-2.0)} {YAY: (51.0,-56.0)} ]
+  | | | | | | | (y=-59.0)
+  | | | | | | | | | [ {YSJ: (45.0,-65.0)} {YWK: (52.0,-66.0)} ]
+  | | | | | | | | (x=44.5)
+  | | | | | | | | | [ {YAW: (44.0,-63.0)} {YHZ: (44.0,-62.0)} ]
+  | | | | | | (y=-66.0)
+  | | | | | | | | | [ {YFC: (45.0,-66.0)} {YYY: (48.0,-68.0)} ]
+  | | | | | | | | (y=-69.5)
+  | | | | | | | | | [ {YJN: (45.0,-72.0)} {YSC: (45.0,-71.0)} ]
+  | | | | | | | (y=-72.0)
+  | | | | | | | | | [ {YHU: (45.0,-73.0)} {YOW: (45.0,-75.0)} ]
+  | | | | | | | | (y=-75.0)
+  | | | | | | | | | [ {YND: (45.0,-76.0)} ]
+  | | | | | (y=-76.5)
+  | | | | | | | | | [ {YNM: (49.0,-77.0)} {YWA: (45.0,-77.0)} ]
+  | | | | | | | | (x=44.0)
+  | | | | | | | | | [ {YHM: (42.0,-79.0)} {YYZ: (43.0,-79.0)} ]
+  | | | | | | | (y=-79.5)
+  | | | | | | | | | [ {YSB: (46.0,-80.0)} {YYU: (49.0,-82.0)} ]
+  | | | | | | | | (y=-83.0)
+  | | | | | | | | | [ {YAM: (46.0,-84.0)} {YYW: (50.0,-88.0)} ]
+  | | | | | | (y=-88.0)
+  | | | | | | | | | [ {YAV: (50.0,-97.0)} {YWG: (49.0,-97.0)} ]
+  | | | | | | | | (y=-99.5)
+  | | | | | | | | | [ {YEN: (49.0,-102.0)} {YRM: (52.0,-114.0)} ]
+  | | | | | | | (y=-114.0)
+  | | | | | | | | | [ {YWL: (52.0,-122.0)} {YXC: (49.0,-115.0)} ]
+  | | | | | | | | (y=-122.0)
+  | | | | | | | | | [ {YAZ: (49.0,-125.0)} ]
+  | | | | (x=41.0)
+  | | | | | | | | [ {MUW: (35.0,3.0)} {ORN: (35.0,2.0)} ]
+  | | | | | | | (y=2.0)
+  | | | | | | | | [ {QAS: (36.0,1.0)} ]
+  | | | | | | (y=1.0)
+  | | | | | | | | [ {TAF: (35.0,0.0)} {TID: (35.0,1.0)} ]
+  | | | | | | | (y=0.0)
+  | | | | | | | | [ {TLM: (35.0,-1.0)} ]
+  | | | | | (x=35.0)
+  | | | | | | | | [ {GHA: (32.0,3.0)} {LOO: (33.0,2.0)} ]
+  | | | | | | | (x=32.0)
+  | | | | | | | | [ {HRM: (32.0,2.0)} ]
+  | | | | | | (x=32.0)
+  | | | | | | | [ {ELG: (30.0,2.0)} {TMX: (29.0,0.0)} ]
+  | | | (x=29.0)
+  | | | | | | | [ {AZR: (27.0,1.0)} {INZ: (27.0,3.0)} ]
+  | | | | | | (x=19.5)
+  | | | | | | | [ {OUA: (12.0,-1.0)} {PKO: (9.0,2.0)} ]
+  | | | | | (x=9.0)
+  | | | | | | | [ {LRL: (9.0,1.0)} {TML: (9.0,0.0)} ]
+  | | | | | | (y=0.0)
+  | | | | | | | [ {NYI: (7.0,-2.0)} ]
+  | | | | (y=-2.0)
+  | | | | | | [ {BOY: (11.0,-3.0)} {TIN: (27.0,-8.0)} ]
+  | | | | | (x=11.0)
+  | | | | | | [ {HGO: (9.0,-5.0)} ]
+  | | (x=7.0)
+  | | | | | | | [ {BNI: (5.0,5.0)} {COO: (6.0,2.0)} ]
+  | | | | | | (y=2.0)
+  | | | | | | | [ {LFW: (6.0,1.0)} ]
+  | | | | | (x=5.0)
+  | | | | | | [ {ACC: (5.0,0.0)} {LXA: (0.0,0.0)} ]
+  | | | | (y=0.0)
+  | | | | | [ {ABJ: (5.0,-3.0)} {TKD: (4.0,-1.0)} ]
+  | | | (y=-3.0)
+  | | | | | | [ {ASK: (6.0,-5.0)} {BYK: (7.0,-5.0)} ]
+  | | | | | (x=6.0)
+  | | | | | | [ {DJO: (6.0,-6.0)} {SPY: (4.0,-6.0)} ]
+  | | | | (y=-6.0)
+  | | | | | [ {MJC: (7.0,-7.0)} ]
+k-nearest-neighbor(9,(7.0,-7.0)) = [ MJC (d=0.0) DJO (d=2.0) BYK (d=4.0)
+    ASK (d=5.0) HGO (d=8.0) SPY (d=10.0) ABJ (d=20.0) NYI (d=25.0)
+    BOY (d=32.0) ]
+k-nearest-neighbor(10,(60.0,25.0)) = [ HEL (d=1.0) HEM (d=4.0) TLL (d=5.0)
+    JYV (d=9.0) KEV (d=10.0) JOE (d=20.0) KEM (d=26.0) KAJ (d=29.0)
+    IVL (d=68.0) KAU (d=73.0) ]
+k-nearest-neighbor(11,(63.0,44.0)) = [ KAU (d=121.0) JOE (d=226.0) KAJ (d=293.0)
+    HEM (d=298.0) IVL (d=314.0) JYV (d=361.0) KEV (d=400.0) KEM (d=404.0)
+    HEL (d=409.0) TLL (d=457.0) ENF (d=477.0) ]
+k-nearest-neighbor(12,(61.0,30.0)) = [ JOE (d=2.0) HEM (d=10.0) KAU (d=13.0)
+    KAJ (d=25.0) JYV (d=29.0) HEL (d=37.0) KEV (d=40.0) KEM (d=52.0)
+    TLL (d=53.0) IVL (d=58.0) ENF (d=113.0) KEL (d=410.0) ]
+k-nearest-neighbor(13,(100.0,27.0)) = [ ENF (d=977.0) IVL (d=1024.0) KAJ (d=1225.0)
+    KEM (d=1234.0) JYV (d=1373.0) KEV (d=1378.0) KAU (d=1405.0) JOE (d=1448.0)
+    HEM (d=1600.0) HEL (d=1609.0) TLL (d=1697.0) KEL (d=2372.0) GWT (d=2477.0) ]
+k-nearest-neighbor(14,(52.0,-3.0)) = [ CVT (d=1.0) GLO (d=2.0) BHX (d=4.0)
+    LDY (d=20.0) NRD (d=65.0) BMK (d=82.0) MHG (d=90.0) EME (d=101.0)
+    HHN (d=109.0) WVN (d=122.0) GWT (d=125.0) XFW (d=145.0) LBC (d=170.0)
+    KEL (d=200.0) ]
+k-nearest-neighbor(15,(70.0,3.0)) = [ GWT (d=281.0) NRD (d=293.0) BMK (d=298.0)
+    EME (d=305.0) WVN (d=314.0) KEL (d=320.0) XFW (d=325.0) LBC (d=338.0)
+    BHX (d=340.0) CVT (d=349.0) LDY (d=356.0) GLO (d=386.0) ENF (d=401.0)
+    MHG (d=450.0) HHN (d=457.0) ]
+k-nearest-neighbor(16,(40.0,-20.0)) = [ TIN (d=313.0) LDY (d=365.0) TLM (d=386.0)
+    TAF (d=425.0) GLO (d=445.0) QAS (d=457.0) TID (d=466.0) CVT (d=468.0)
+    BHX (d=505.0) ORN (d=509.0) TMX (d=521.0) VEY (d=529.0) LOO (d=533.0)
+    HRM (d=548.0) MUW (d=554.0) ELG (d=584.0) ]
+k-nearest-neighbor(17,(16.0,5.0)) = [ QUS (d=17.0) OUA (d=52.0) ABV (d=53.0)
+    PKO (d=58.0) LRL (d=65.0) TML (d=74.0) AKR (d=81.0) BOY (d=89.0)
+    ENU (d=104.0) COO (d=109.0) LFW (d=116.0) BNI (d=121.0) INZ (d=125.0)
+    NYI (d=130.0) AZR (d=137.0) ACC (d=146.0) HGO (d=149.0) ]
+k-nearest-neighbor(18,(-12.0,-188.0)) = [ ILI (d=6197.0) HOM (d=6410.0) ENA (d=6553.0)
+    GAL (d=6800.0) UTO (d=7154.0) GKN (d=7325.0) FBK (d=7457.0) FAI (d=7540.0)
+    YAZ (d=7690.0) SGY (d=7850.0) YWL (d=8452.0) YOC (d=8642.0) YXC (d=9050.0)
+    YDQ (d=9113.0) YET (d=9409.0) YEV (d=9425.0) YRM (d=9572.0) YED (d=9850.0) ]

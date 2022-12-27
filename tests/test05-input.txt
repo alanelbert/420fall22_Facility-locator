@@ -1,0 +1,315 @@
+comment:Bucket size = 2. Stress test for delete
+initialize:2:-200:200:-200:200:1
+insert-later:PEK:Beijing:116:160
+insert-later:SFO:San Francisco:-122:148
+insert-later:JFK:New York:-73:160
+insert-later:DXB:Dubai:55:100
+insert-later:BKK:Bangkok:100:52
+insert-later:ORD:Chicago:-87:164
+insert-later:CDG:Paris:2:196
+insert-later:HKG:Hong Kong:113:88
+insert-later:LHR:London:0:199
+insert-later:CAN:Guangzhou:113:96
+bulk-insert
+insert-later:ICN:Incheon:126:148
+insert-later:ATL:Atlanta:-84:142
+insert-later:NRT:Tokyo:140:140
+insert-later:DCA:Washington:-77:152
+insert-later:FRA:Frankfurt:8:200
+insert-later:DEL:Delhi:77:112
+insert-later:AMS:Amsterdam:4:198
+insert-later:DFW:Dallas:-97:128
+insert-later:SIN:Singapore:103:4
+insert-later:LAX:Los Angeles:-118:142
+insert-later:PVG:Shanghai:121:124
+insert-later:IAD:Washington:-78:152
+insert-later:BWI:Baltimore:-76:156
+bulk-insert
+list
+delete:HKG
+list
+delete:CAN
+list
+delete:ICN
+delete:PEK
+delete:SFO
+delete:JFK
+delete:DXB
+list
+delete:BKK
+delete:ORD
+delete:CDG
+delete:LHR
+delete:ATL
+delete:NRT
+delete:DCA
+list
+comment:This should throw and nonexistent point exception
+delete-point:116:160
+delete:FRA
+delete:DEL
+delete:AMS
+delete:DFW
+delete:SIN
+delete:LAX
+delete:PVG
+comment:Only two points left
+size
+list
+delete:IAD
+delete:BWI
+size
+list
+clear
+comment:Creates tree with duplicate x-coordinates
+insert-later:ATL:Atlanta:1:5
+insert-later:SFO:San Francisco:4:2
+insert-later:ORD:Chicago:4:3
+insert-later:IAD:Dulles:8:6
+insert-later:DFW:Dallas-Fort Worth:4:5
+insert-later:LAX:Los Angeles:4:1
+comment:Bulk-inserting 6 points
+bulk-insert
+size
+list
+comment:Deleting nodes involving duplicate x-coordinates
+delete:SFO
+delete:ORD
+delete:DFW
+delete:LAX
+size
+list
+comment:Adding back the points we deleted. They'll all go into the right subtree this time.
+insert-later:SFZ:San Francisco:4:2
+insert-later:ORZ:Chicago:4:3
+insert-later:DFZ:Dallas-Fort Worth:4:5
+insert-later:LAZ:Los Angeles:4:1
+bulk-insert
+size
+list
+delete:ATL
+delete:IAD
+delete:SFZ
+delete:ORZ
+delete:DFZ
+delete:LAZ
+size
+list
+clear
+comment:Inserting 100 points
+insert-later:TMX:TIMIMOUN:29:0
+insert-later:NRD:NORDERNEY:53:5
+insert-later:GWT:WESTERLAND:54:8
+insert-later:TLL:TALLINN:59:24
+insert-later:ENF:ENONTEKIO:68:23
+insert-later:KEV:HALLI:61:24
+insert-later:HEM:HELSINKI:60:25
+insert-later:HEL:HELSINKI:60:24
+insert-later:BSK:BISKRA:34:5
+insert-later:ELG:EL GOLEA:30:2
+insert-later:HTN:HOTAN:37:79
+insert-later:URC:URUMQI:43:87
+insert-later:HRB:HARBIN:45:126
+insert-later:DLC:DALIAN:38:121
+insert-later:NYI:SUNYANI:7:-2
+insert-later:TKD:TAKORADI:4:-1
+insert-later:ABJ:ABIDJAN:5:-3
+insert-later:BYK:BOUAKE:7:-5
+insert-later:DJO:DALOA:6:-6
+insert-later:HGO:KORHOGO:9:-5
+insert-later:MJC:MAN:7:-7
+insert-later:JYV:JYVASKYLA:62:25
+insert-later:KAU:KAUHAVA:63:23
+insert-later:KEM:KEMI:65:24
+insert-later:KAJ:KAJAANI:64:27
+insert-later:LDY:LONDONDERRY:55:-7
+insert-later:BHX:BIRMINGHAM:52:-1
+insert-later:CVT:COVENTRY:52:-2
+insert-later:BNI:BENIN:6:5
+insert-later:CBQ:CALABAR:4:8
+insert-later:ENU:ENUGU:6:7
+insert-later:QUS:GUSAU:12:6
+insert-later:DJE:DJERBA:35:14
+insert-later:EBM:EL BORMA:34:14
+insert-later:SFA:SFAX:34:23
+insert-later:TOE:TOZEUR:33:14
+insert-later:LRL:NIATOUGOU:9:1
+insert-later:LFW:LOME:6:1
+insert-later:HHN:HAHN:49:7
+insert-later:MHG:MANNHEIM:49:8
+insert-later:XFW:HAMBURG:53:9
+insert-later:KEL:KIEL:54:10
+insert-later:LBC:LUEBECK:53:10
+insert-later:EME:EMDEN:53:7
+insert-later:WVN:WILHELMSHAVEN:53:8
+insert-later:BMK:BORKUM:53:6
+insert-later:ENA:KENAI:60:-151
+insert-later:FAI:FAIRBANKS:64:-146
+insert-later:FBK:FORT WAINWRIGHT:64:-147
+insert-later:GAL:GALENA:64:-156
+insert-later:GKN:GULKANA:62:-145
+insert-later:SGY:SKAGWAY:59:-135
+insert-later:HOM:HOMER:59:-151
+insert-later:ILI:ILIAMNA:59:-154
+insert-later:UTO:INDIAN MOUNTAINS:65:-153
+insert-later:NGB:NINBO:29:121
+insert-later:NKG:NANJING:31:118
+insert-later:HFE:HEFEI:31:117
+insert-later:TAO:QINGDAO:36:120
+insert-later:SHA:SHANGHAI:31:121
+insert-later:YNT:YANTAI:37:121
+insert-later:CKG:CHONGQING:29:106
+insert-later:LXA:LHASA:0:0
+insert-later:CTU:CHENGDU:30:103
+insert-later:HME:HASSI-MESSAOUD:31:6
+insert-later:INZ:IN SALAH:27:2
+insert-later:YEV:INUVIK:68:-133
+insert-later:YFB:IQALUIT:63:-68
+insert-later:YFC:FREDERICTON:45:-66
+insert-later:IVL:IVALO:68:27
+insert-later:JOE:JOENSUU:62:29
+insert-later:GKA:GOROKA:-6:145
+insert-later:MAG:MADANG:-5:145
+insert-later:HGU:MOUNT HAGEN:-5:144
+insert-later:LAE:NADZAB:-6:146
+insert-later:POM:PORT MORESBY:-9:147
+insert-later:WWK:WEWAK:-3:143
+insert-later:VEY:VESTMANNAEYJAR:63:-20
+insert-later:YAM:SAULT SAINTE MARIE:46:-84
+insert-later:YAV:WINNIPEG:50:-97
+insert-later:YAW:HALIFAX:44:-63
+insert-later:YAY:ST. ANTHONY:51:-56
+insert-later:YAZ:TOFINO:49:-125
+insert-later:YBB:PELLY BAY:68:-89
+insert-later:YDQ:DAWSON CREEK:55:-120
+insert-later:GHA:GHARDAIA:32:3
+insert-later:PKO:PARAKOU:9:2
+insert-later:OUA:OUAGADOUGOU:12:-1
+insert-later:BOY:BOBO-DIOULASSO:11:-4
+insert-later:ACC:ACCRA:5:0
+insert-later:TML:TAMALE:9:0
+insert-later:GLO:GOLOUCHESTERSHIRE:51:-2
+insert-later:OGX:OUARGLA:31:5
+insert-later:IAM:ZARZAITINE:28:9
+insert-later:COO:COTONOU:6:2
+insert-later:TLM:TLEMCEN:35:-1
+insert-later:ORN:ORAN:35:2
+insert-later:MUW:GHRISS:35:3
+insert-later:AZR:ADRAR:27:0
+insert-later:TGR:TOUGGOURT:32:14
+bulk-insert
+size
+list
+comment:Deleting all 100 points
+delete:TMX
+delete:NRD
+delete:GWT
+delete:TLL
+delete:ENF
+delete:KEV
+delete:HEM
+delete:HEL
+delete:BSK
+delete:ELG
+delete:HTN
+delete:URC
+delete:HRB
+delete:DLC
+delete:NYI
+delete:TKD
+delete:ABJ
+delete:BYK
+delete:DJO
+delete:HGO
+delete:MJC
+delete:JYV
+delete:KAU
+delete:KEM
+delete:KAJ
+delete:LDY
+delete:BHX
+delete:CVT
+delete:BNI
+delete:CBQ
+delete:ENU
+delete:QUS
+delete:DJE
+delete:EBM
+delete:SFA
+delete:TOE
+delete:LRL
+delete:LFW
+delete:HHN
+delete:MHG
+delete:XFW
+delete:KEL
+delete:LBC
+delete:EME
+delete:WVN
+delete:BMK
+delete:ENA
+delete:FAI
+delete:FBK
+delete:GAL
+size
+list
+delete:GKN
+delete:SGY
+delete:HOM
+delete:ILI
+delete:UTO
+delete:NGB
+delete:NKG
+delete:HFE
+delete:TAO
+delete:SHA
+delete:YNT
+delete:CKG
+delete:LXA
+delete:CTU
+delete:HME
+delete:INZ
+delete:YEV
+delete:YFB
+delete:YFC
+delete:IVL
+delete:JOE
+delete:GKA
+delete:MAG
+delete:HGU
+delete:LAE
+size
+list
+delete:POM
+delete:WWK
+delete:VEY
+delete:YAM
+delete:YAV
+delete:YAW
+delete:YAY
+delete:YAZ
+delete:YBB
+delete:YDQ
+delete:GHA
+delete:PKO
+delete:OUA
+delete:BOY
+delete:ACC
+size
+list
+delete:TML
+delete:GLO
+delete:OGX
+delete:IAM
+delete:COO
+size
+list
+delete:TLM
+delete:ORN
+delete:MUW
+size
+list
+delete:AZR
+delete:TGR
+size
+list

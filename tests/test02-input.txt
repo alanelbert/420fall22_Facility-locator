@@ -1,0 +1,69 @@
+comment:Bucket size = 1. Tests k-nearest neighbors
+initialize:1:0:100:0:100:1
+insert-later:ATL:Atlanta:11:51
+insert-later:JFK:New York:92:42
+insert-later:BWI:Baltimore:83:83
+insert-later:SEA:Seattle:54:54
+insert-later:SFO:San Francisco:15:95
+insert-later:ORD:Chicago:26:66
+insert-later:DFW:Dallas-Fort Worth:37:87
+insert-later:DCA:Washington:68:77
+insert-later:LAX:Los Angeles:49:28
+insert-later:IAD:Dulles:30:40
+insert-later:PVD:Providence:91:21
+insert-later:LAS:Las Vegas:12:22
+insert-later:MCO:Orlando:63:33
+comment:Bulk-inserting 13 points
+bulk-insert
+size
+list
+nearest-neighbor:0:0
+k-nearest-neighbor:1:0:0
+k-nearest-neighbor:2:0:0
+k-nearest-neighbor:5:0:0
+k-nearest-neighbor:13:0:0
+k-nearest-neighbor:15:0:0
+k-nearest-neighbor:4:11:51
+k-nearest-neighbor:4:92:42
+k-nearest-neighbor:4:83:83
+k-nearest-neighbor:4:54:54
+k-nearest-neighbor:4:15:95
+k-nearest-neighbor:4:26:66
+k-nearest-neighbor:4:37:87
+k-nearest-neighbor:4:68:78
+k-nearest-neighbor:4:49:29
+k-nearest-neighbor:4:30:40
+k-nearest-neighbor:4:91:21
+k-nearest-neighbor:4:12:22
+k-nearest-neighbor:4:63:33
+clear
+insert-later:LHR:London:11:91
+insert-later:CDG:Paris:22:50
+insert-later:FRA:Frankfort:43:50
+insert-later:BKK:Bangkok:50:34
+insert-later:PEK:Beijing:50:95
+insert-later:HKG:Hong Kong:66:50
+insert-later:NRT:Tokyo:87:50
+insert-later:ICN:Seoul:98:18
+comment:Bulk-inserting 8 points with many duplicate coordinates
+bulk-insert
+size
+list
+k-nearest-neighbor:1:0:0
+k-nearest-neighbor:2:0:0
+k-nearest-neighbor:5:0:0
+k-nearest-neighbor:8:0:0
+k-nearest-neighbor:10:0:0
+k-nearest-neighbor:4:1:9
+k-nearest-neighbor:4:2:5
+k-nearest-neighbor:4:4:5
+k-nearest-neighbor:4:5:3
+k-nearest-neighbor:4:5:9
+k-nearest-neighbor:4:6:5
+k-nearest-neighbor:4:8:5
+k-nearest-neighbor:4:9:1
+clear
+size
+list
+nearest-neighbor:0:0
+k-nearest-neighbor:5:0:0

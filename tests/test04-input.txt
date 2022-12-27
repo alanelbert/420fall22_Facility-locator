@@ -1,0 +1,41 @@
+comment:This tests KCapFL with capacity 3
+initialize:2:0:100:0:100:3
+insert-later:ATL:Atlanta:11:51
+insert-later:JFK:New York:92:33
+insert-later:BWI:Baltimore:83:83
+insert-later:SEA:Seattle:54:54
+insert-later:SFO:San Francisco:38:95
+insert-later:ORD:Chicago:26:66
+insert-later:DFW:Dallas-Fort Worth:27:87
+insert-later:DCA:Washington:68:77
+insert-later:LAX:Los Angeles:44:33
+insert-later:IAD:Dulles:30:40
+insert-later:PVD:Providence:81:21
+insert-later:LAS:Las Vegas:13:83
+insert-later:MCO:Orlando:63:23
+insert-later:LHR:London:66:91
+insert-later:CDG:Paris:22:50
+insert-later:FRA:Frankfort:43:55
+insert-later:BKK:Bangkok:50:24
+insert-later:PEK:Beijing:50:95
+insert-later:HKG:Hong Kong:66:50
+insert-later:NRT:Tokyo:13:75
+insert-later:ICN:Seoul:98:18
+comment:Building the kCapFL for 21 points
+kfl-build
+kfl-list-kd-tree
+kfl-extract-cluster
+kfl-list-kd-tree
+kfl-extract-cluster
+kfl-list-kd-tree
+kfl-extract-cluster
+kfl-list-kd-tree
+kfl-extract-cluster
+kfl-list-kd-tree
+comment:Skips non-intact clusters (LAX, DFW, LAX, and IAD)
+kfl-extract-cluster
+kfl-list-kd-tree
+kfl-extract-cluster
+kfl-list-kd-tree
+kfl-extract-cluster
+kfl-list-kd-tree

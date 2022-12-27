@@ -1,0 +1,1133 @@
+[Bucket size = 2. Stress test for delete]
+initialize: bucket-size = 2 bounding-box = [(-200.0,-200.0),(200.0,200.0)] capacity = 1
+insert-later(PEK): okay {Beijing, (116.0,160.0)}
+insert-later(SFO): okay {San Francisco, (-122.0,148.0)}
+insert-later(JFK): okay {New York, (-73.0,160.0)}
+insert-later(DXB): okay {Dubai, (55.0,100.0)}
+insert-later(BKK): okay {Bangkok, (100.0,52.0)}
+insert-later(ORD): okay {Chicago, (-87.0,164.0)}
+insert-later(CDG): okay {Paris, (2.0,196.0)}
+insert-later(HKG): okay {Hong Kong, (113.0,88.0)}
+insert-later(LHR): okay {London, (0.0,199.0)}
+insert-later(CAN): okay {Guangzhou, (113.0,96.0)}
+bulk-insert[10]: successful
+insert-later(ICN): okay {Incheon, (126.0,148.0)}
+insert-later(ATL): okay {Atlanta, (-84.0,142.0)}
+insert-later(NRT): okay {Tokyo, (140.0,140.0)}
+insert-later(DCA): okay {Washington, (-77.0,152.0)}
+insert-later(FRA): okay {Frankfurt, (8.0,200.0)}
+insert-later(DEL): okay {Delhi, (77.0,112.0)}
+insert-later(AMS): okay {Amsterdam, (4.0,198.0)}
+insert-later(DFW): okay {Dallas, (-97.0,128.0)}
+insert-later(SIN): okay {Singapore, (103.0,4.0)}
+insert-later(LAX): okay {Los Angeles, (-118.0,142.0)}
+insert-later(PVG): okay {Shanghai, (121.0,124.0)}
+insert-later(IAD): okay {Washington, (-78.0,152.0)}
+insert-later(BWI): okay {Baltimore, (-76.0,156.0)}
+bulk-insert[13]: successful
+list:
+  (x=28.5)
+  (y=96.0)
+  (y=100.0)
+  (x=118.5)
+  (y=140.0)
+  [ {ICN: (126.0,148.0)} {NRT: (140.0,140.0)} ]
+  [ {PVG: (121.0,124.0)} ]
+  (x=77.0)
+  [ {DEL: (77.0,112.0)} {PEK: (116.0,160.0)} ]
+  [ {DXB: (55.0,100.0)} ]
+  [ {CAN: (113.0,96.0)} ]
+  (y=52.0)
+  [ {BKK: (100.0,52.0)} {HKG: (113.0,88.0)} ]
+  [ {SIN: (103.0,4.0)} ]
+  (x=-73.0)
+  (x=0.0)
+  (x=3.0)
+  [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  [ {JFK: (-73.0,160.0)} ]
+  (x=-85.5)
+  (y=152.0)
+  [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  (y=145.0)
+  [ {ORD: (-87.0,164.0)} {SFO: (-122.0,148.0)} ]
+  [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+Tree structure:
+  | | | | | [ {ICN: (126.0,148.0)} {NRT: (140.0,140.0)} ]
+  | | | | (y=140.0)
+  | | | | | [ {PVG: (121.0,124.0)} ]
+  | | | (x=118.5)
+  | | | | | [ {DEL: (77.0,112.0)} {PEK: (116.0,160.0)} ]
+  | | | | (x=77.0)
+  | | | | | [ {DXB: (55.0,100.0)} ]
+  | | (y=100.0)
+  | | | [ {CAN: (113.0,96.0)} ]
+  | (y=96.0)
+  | | | [ {BKK: (100.0,52.0)} {HKG: (113.0,88.0)} ]
+  | | (y=52.0)
+  | | | [ {SIN: (103.0,4.0)} ]
+  (x=28.5)
+  | | | | [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  | | | (x=3.0)
+  | | | | [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  | | (x=0.0)
+  | | | [ {JFK: (-73.0,160.0)} ]
+  | (x=-73.0)
+  | | | | [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  | | | (y=152.0)
+  | | | | [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  | | (x=-85.5)
+  | | | | [ {ORD: (-87.0,164.0)} {SFO: (-122.0,148.0)} ]
+  | | | (y=145.0)
+  | | | | [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+delete(HKG): successful
+list:
+  (x=28.5)
+  (y=96.0)
+  (y=100.0)
+  (x=118.5)
+  (y=140.0)
+  [ {ICN: (126.0,148.0)} {NRT: (140.0,140.0)} ]
+  [ {PVG: (121.0,124.0)} ]
+  (x=77.0)
+  [ {DEL: (77.0,112.0)} {PEK: (116.0,160.0)} ]
+  [ {DXB: (55.0,100.0)} ]
+  [ {CAN: (113.0,96.0)} ]
+  (y=52.0)
+  [ {BKK: (100.0,52.0)} ]
+  [ {SIN: (103.0,4.0)} ]
+  (x=-73.0)
+  (x=0.0)
+  (x=3.0)
+  [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  [ {JFK: (-73.0,160.0)} ]
+  (x=-85.5)
+  (y=152.0)
+  [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  (y=145.0)
+  [ {ORD: (-87.0,164.0)} {SFO: (-122.0,148.0)} ]
+  [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+Tree structure:
+  | | | | | [ {ICN: (126.0,148.0)} {NRT: (140.0,140.0)} ]
+  | | | | (y=140.0)
+  | | | | | [ {PVG: (121.0,124.0)} ]
+  | | | (x=118.5)
+  | | | | | [ {DEL: (77.0,112.0)} {PEK: (116.0,160.0)} ]
+  | | | | (x=77.0)
+  | | | | | [ {DXB: (55.0,100.0)} ]
+  | | (y=100.0)
+  | | | [ {CAN: (113.0,96.0)} ]
+  | (y=96.0)
+  | | | [ {BKK: (100.0,52.0)} ]
+  | | (y=52.0)
+  | | | [ {SIN: (103.0,4.0)} ]
+  (x=28.5)
+  | | | | [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  | | | (x=3.0)
+  | | | | [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  | | (x=0.0)
+  | | | [ {JFK: (-73.0,160.0)} ]
+  | (x=-73.0)
+  | | | | [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  | | | (y=152.0)
+  | | | | [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  | | (x=-85.5)
+  | | | | [ {ORD: (-87.0,164.0)} {SFO: (-122.0,148.0)} ]
+  | | | (y=145.0)
+  | | | | [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+delete(CAN): successful
+list:
+  (x=28.5)
+  (y=96.0)
+  (x=118.5)
+  (y=140.0)
+  [ {ICN: (126.0,148.0)} {NRT: (140.0,140.0)} ]
+  [ {PVG: (121.0,124.0)} ]
+  (x=77.0)
+  [ {DEL: (77.0,112.0)} {PEK: (116.0,160.0)} ]
+  [ {DXB: (55.0,100.0)} ]
+  (y=52.0)
+  [ {BKK: (100.0,52.0)} ]
+  [ {SIN: (103.0,4.0)} ]
+  (x=-73.0)
+  (x=0.0)
+  (x=3.0)
+  [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  [ {JFK: (-73.0,160.0)} ]
+  (x=-85.5)
+  (y=152.0)
+  [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  (y=145.0)
+  [ {ORD: (-87.0,164.0)} {SFO: (-122.0,148.0)} ]
+  [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+Tree structure:
+  | | | | [ {ICN: (126.0,148.0)} {NRT: (140.0,140.0)} ]
+  | | | (y=140.0)
+  | | | | [ {PVG: (121.0,124.0)} ]
+  | | (x=118.5)
+  | | | | [ {DEL: (77.0,112.0)} {PEK: (116.0,160.0)} ]
+  | | | (x=77.0)
+  | | | | [ {DXB: (55.0,100.0)} ]
+  | (y=96.0)
+  | | | [ {BKK: (100.0,52.0)} ]
+  | | (y=52.0)
+  | | | [ {SIN: (103.0,4.0)} ]
+  (x=28.5)
+  | | | | [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  | | | (x=3.0)
+  | | | | [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  | | (x=0.0)
+  | | | [ {JFK: (-73.0,160.0)} ]
+  | (x=-73.0)
+  | | | | [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  | | | (y=152.0)
+  | | | | [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  | | (x=-85.5)
+  | | | | [ {ORD: (-87.0,164.0)} {SFO: (-122.0,148.0)} ]
+  | | | (y=145.0)
+  | | | | [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+delete(ICN): successful
+delete(PEK): successful
+delete(SFO): successful
+delete(JFK): successful
+delete(DXB): successful
+list:
+  (x=28.5)
+  (y=96.0)
+  (x=118.5)
+  (y=140.0)
+  [ {NRT: (140.0,140.0)} ]
+  [ {PVG: (121.0,124.0)} ]
+  [ {DEL: (77.0,112.0)} ]
+  (y=52.0)
+  [ {BKK: (100.0,52.0)} ]
+  [ {SIN: (103.0,4.0)} ]
+  (x=-73.0)
+  (x=3.0)
+  [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  (x=-85.5)
+  (y=152.0)
+  [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  (y=145.0)
+  [ {ORD: (-87.0,164.0)} ]
+  [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+Tree structure:
+  | | | | [ {NRT: (140.0,140.0)} ]
+  | | | (y=140.0)
+  | | | | [ {PVG: (121.0,124.0)} ]
+  | | (x=118.5)
+  | | | [ {DEL: (77.0,112.0)} ]
+  | (y=96.0)
+  | | | [ {BKK: (100.0,52.0)} ]
+  | | (y=52.0)
+  | | | [ {SIN: (103.0,4.0)} ]
+  (x=28.5)
+  | | | [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  | | (x=3.0)
+  | | | [ {CDG: (2.0,196.0)} {LHR: (0.0,199.0)} ]
+  | (x=-73.0)
+  | | | | [ {BWI: (-76.0,156.0)} {DCA: (-77.0,152.0)} ]
+  | | | (y=152.0)
+  | | | | [ {ATL: (-84.0,142.0)} {IAD: (-78.0,152.0)} ]
+  | | (x=-85.5)
+  | | | | [ {ORD: (-87.0,164.0)} ]
+  | | | (y=145.0)
+  | | | | [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+delete(BKK): successful
+delete(ORD): successful
+delete(CDG): successful
+delete(LHR): successful
+delete(ATL): successful
+delete(NRT): successful
+delete(DCA): successful
+list:
+  (x=28.5)
+  (y=96.0)
+  (x=118.5)
+  [ {PVG: (121.0,124.0)} ]
+  [ {DEL: (77.0,112.0)} ]
+  [ {SIN: (103.0,4.0)} ]
+  (x=-73.0)
+  [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  (x=-85.5)
+  (y=152.0)
+  [ {BWI: (-76.0,156.0)} ]
+  [ {IAD: (-78.0,152.0)} ]
+  [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+Tree structure:
+  | | | [ {PVG: (121.0,124.0)} ]
+  | | (x=118.5)
+  | | | [ {DEL: (77.0,112.0)} ]
+  | (y=96.0)
+  | | [ {SIN: (103.0,4.0)} ]
+  (x=28.5)
+  | | [ {AMS: (4.0,198.0)} {FRA: (8.0,200.0)} ]
+  | (x=-73.0)
+  | | | | [ {BWI: (-76.0,156.0)} ]
+  | | | (y=152.0)
+  | | | | [ {IAD: (-78.0,152.0)} ]
+  | | (x=-85.5)
+  | | | [ {DFW: (-97.0,128.0)} {LAX: (-118.0,142.0)} ]
+[This should throw and nonexistent point exception]
+delete-point(116.0,160.0): Failure due to exception: "Deletion of nonexistent point"
+delete(FRA): successful
+delete(DEL): successful
+delete(AMS): successful
+delete(DFW): successful
+delete(SIN): successful
+delete(LAX): successful
+delete(PVG): successful
+[Only two points left]
+size: 2
+list:
+  (y=152.0)
+  [ {BWI: (-76.0,156.0)} ]
+  [ {IAD: (-78.0,152.0)} ]
+Tree structure:
+  | [ {BWI: (-76.0,156.0)} ]
+  (y=152.0)
+  | [ {IAD: (-78.0,152.0)} ]
+delete(IAD): successful
+delete(BWI): successful
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]
+clear: successful
+[Creates tree with duplicate x-coordinates]
+insert-later(ATL): okay {Atlanta, (1.0,5.0)}
+insert-later(SFO): okay {San Francisco, (4.0,2.0)}
+insert-later(ORD): okay {Chicago, (4.0,3.0)}
+insert-later(IAD): okay {Dulles, (8.0,6.0)}
+insert-later(DFW): okay {Dallas-Fort Worth, (4.0,5.0)}
+insert-later(LAX): okay {Los Angeles, (4.0,1.0)}
+[Bulk-inserting 6 points]
+bulk-insert[6]: successful
+size: 6
+list:
+  (x=4.0)
+  (x=4.0)
+  [ {DFW: (4.0,5.0)} {IAD: (8.0,6.0)} ]
+  [ {ORD: (4.0,3.0)} ]
+  (y=2.0)
+  [ {ATL: (1.0,5.0)} {SFO: (4.0,2.0)} ]
+  [ {LAX: (4.0,1.0)} ]
+Tree structure:
+  | | [ {DFW: (4.0,5.0)} {IAD: (8.0,6.0)} ]
+  | (x=4.0)
+  | | [ {ORD: (4.0,3.0)} ]
+  (x=4.0)
+  | | [ {ATL: (1.0,5.0)} {SFO: (4.0,2.0)} ]
+  | (y=2.0)
+  | | [ {LAX: (4.0,1.0)} ]
+[Deleting nodes involving duplicate x-coordinates]
+delete(SFO): successful
+delete(ORD): successful
+delete(DFW): successful
+delete(LAX): successful
+size: 2
+list:
+  (x=4.0)
+  [ {IAD: (8.0,6.0)} ]
+  [ {ATL: (1.0,5.0)} ]
+Tree structure:
+  | [ {IAD: (8.0,6.0)} ]
+  (x=4.0)
+  | [ {ATL: (1.0,5.0)} ]
+[Adding back the points we deleted. They'll all go into the right subtree this time.]
+insert-later(SFZ): okay {San Francisco, (4.0,2.0)}
+insert-later(ORZ): okay {Chicago, (4.0,3.0)}
+insert-later(DFZ): okay {Dallas-Fort Worth, (4.0,5.0)}
+insert-later(LAZ): okay {Los Angeles, (4.0,1.0)}
+bulk-insert[4]: successful
+size: 6
+list:
+  (x=4.0)
+  (y=3.0)
+  (x=4.0)
+  [ {DFZ: (4.0,5.0)} {IAD: (8.0,6.0)} ]
+  [ {ORZ: (4.0,3.0)} ]
+  [ {LAZ: (4.0,1.0)} {SFZ: (4.0,2.0)} ]
+  [ {ATL: (1.0,5.0)} ]
+Tree structure:
+  | | | [ {DFZ: (4.0,5.0)} {IAD: (8.0,6.0)} ]
+  | | (x=4.0)
+  | | | [ {ORZ: (4.0,3.0)} ]
+  | (y=3.0)
+  | | [ {LAZ: (4.0,1.0)} {SFZ: (4.0,2.0)} ]
+  (x=4.0)
+  | [ {ATL: (1.0,5.0)} ]
+delete(ATL): successful
+delete(IAD): successful
+delete(SFZ): successful
+delete(ORZ): successful
+delete(DFZ): successful
+delete(LAZ): successful
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]
+clear: successful
+[Inserting 100 points]
+insert-later(TMX): okay {TIMIMOUN, (29.0,0.0)}
+insert-later(NRD): okay {NORDERNEY, (53.0,5.0)}
+insert-later(GWT): okay {WESTERLAND, (54.0,8.0)}
+insert-later(TLL): okay {TALLINN, (59.0,24.0)}
+insert-later(ENF): okay {ENONTEKIO, (68.0,23.0)}
+insert-later(KEV): okay {HALLI, (61.0,24.0)}
+insert-later(HEM): okay {HELSINKI, (60.0,25.0)}
+insert-later(HEL): okay {HELSINKI, (60.0,24.0)}
+insert-later(BSK): okay {BISKRA, (34.0,5.0)}
+insert-later(ELG): okay {EL GOLEA, (30.0,2.0)}
+insert-later(HTN): okay {HOTAN, (37.0,79.0)}
+insert-later(URC): okay {URUMQI, (43.0,87.0)}
+insert-later(HRB): okay {HARBIN, (45.0,126.0)}
+insert-later(DLC): okay {DALIAN, (38.0,121.0)}
+insert-later(NYI): okay {SUNYANI, (7.0,-2.0)}
+insert-later(TKD): okay {TAKORADI, (4.0,-1.0)}
+insert-later(ABJ): okay {ABIDJAN, (5.0,-3.0)}
+insert-later(BYK): okay {BOUAKE, (7.0,-5.0)}
+insert-later(DJO): okay {DALOA, (6.0,-6.0)}
+insert-later(HGO): okay {KORHOGO, (9.0,-5.0)}
+insert-later(MJC): okay {MAN, (7.0,-7.0)}
+insert-later(JYV): okay {JYVASKYLA, (62.0,25.0)}
+insert-later(KAU): okay {KAUHAVA, (63.0,23.0)}
+insert-later(KEM): okay {KEMI, (65.0,24.0)}
+insert-later(KAJ): okay {KAJAANI, (64.0,27.0)}
+insert-later(LDY): okay {LONDONDERRY, (55.0,-7.0)}
+insert-later(BHX): okay {BIRMINGHAM, (52.0,-1.0)}
+insert-later(CVT): okay {COVENTRY, (52.0,-2.0)}
+insert-later(BNI): okay {BENIN, (6.0,5.0)}
+insert-later(CBQ): okay {CALABAR, (4.0,8.0)}
+insert-later(ENU): okay {ENUGU, (6.0,7.0)}
+insert-later(QUS): okay {GUSAU, (12.0,6.0)}
+insert-later(DJE): okay {DJERBA, (35.0,14.0)}
+insert-later(EBM): okay {EL BORMA, (34.0,14.0)}
+insert-later(SFA): okay {SFAX, (34.0,23.0)}
+insert-later(TOE): okay {TOZEUR, (33.0,14.0)}
+insert-later(LRL): okay {NIATOUGOU, (9.0,1.0)}
+insert-later(LFW): okay {LOME, (6.0,1.0)}
+insert-later(HHN): okay {HAHN, (49.0,7.0)}
+insert-later(MHG): okay {MANNHEIM, (49.0,8.0)}
+insert-later(XFW): okay {HAMBURG, (53.0,9.0)}
+insert-later(KEL): okay {KIEL, (54.0,10.0)}
+insert-later(LBC): okay {LUEBECK, (53.0,10.0)}
+insert-later(EME): okay {EMDEN, (53.0,7.0)}
+insert-later(WVN): okay {WILHELMSHAVEN, (53.0,8.0)}
+insert-later(BMK): okay {BORKUM, (53.0,6.0)}
+insert-later(ENA): okay {KENAI, (60.0,-151.0)}
+insert-later(FAI): okay {FAIRBANKS, (64.0,-146.0)}
+insert-later(FBK): okay {FORT WAINWRIGHT, (64.0,-147.0)}
+insert-later(GAL): okay {GALENA, (64.0,-156.0)}
+insert-later(GKN): okay {GULKANA, (62.0,-145.0)}
+insert-later(SGY): okay {SKAGWAY, (59.0,-135.0)}
+insert-later(HOM): okay {HOMER, (59.0,-151.0)}
+insert-later(ILI): okay {ILIAMNA, (59.0,-154.0)}
+insert-later(UTO): okay {INDIAN MOUNTAINS, (65.0,-153.0)}
+insert-later(NGB): okay {NINBO, (29.0,121.0)}
+insert-later(NKG): okay {NANJING, (31.0,118.0)}
+insert-later(HFE): okay {HEFEI, (31.0,117.0)}
+insert-later(TAO): okay {QINGDAO, (36.0,120.0)}
+insert-later(SHA): okay {SHANGHAI, (31.0,121.0)}
+insert-later(YNT): okay {YANTAI, (37.0,121.0)}
+insert-later(CKG): okay {CHONGQING, (29.0,106.0)}
+insert-later(LXA): okay {LHASA, (0.0,0.0)}
+insert-later(CTU): okay {CHENGDU, (30.0,103.0)}
+insert-later(HME): okay {HASSI-MESSAOUD, (31.0,6.0)}
+insert-later(INZ): okay {IN SALAH, (27.0,2.0)}
+insert-later(YEV): okay {INUVIK, (68.0,-133.0)}
+insert-later(YFB): okay {IQALUIT, (63.0,-68.0)}
+insert-later(YFC): okay {FREDERICTON, (45.0,-66.0)}
+insert-later(IVL): okay {IVALO, (68.0,27.0)}
+insert-later(JOE): okay {JOENSUU, (62.0,29.0)}
+insert-later(GKA): okay {GOROKA, (-6.0,145.0)}
+insert-later(MAG): okay {MADANG, (-5.0,145.0)}
+insert-later(HGU): okay {MOUNT HAGEN, (-5.0,144.0)}
+insert-later(LAE): okay {NADZAB, (-6.0,146.0)}
+insert-later(POM): okay {PORT MORESBY, (-9.0,147.0)}
+insert-later(WWK): okay {WEWAK, (-3.0,143.0)}
+insert-later(VEY): okay {VESTMANNAEYJAR, (63.0,-20.0)}
+insert-later(YAM): okay {SAULT SAINTE MARIE, (46.0,-84.0)}
+insert-later(YAV): okay {WINNIPEG, (50.0,-97.0)}
+insert-later(YAW): okay {HALIFAX, (44.0,-63.0)}
+insert-later(YAY): okay {ST. ANTHONY, (51.0,-56.0)}
+insert-later(YAZ): okay {TOFINO, (49.0,-125.0)}
+insert-later(YBB): okay {PELLY BAY, (68.0,-89.0)}
+insert-later(YDQ): okay {DAWSON CREEK, (55.0,-120.0)}
+insert-later(GHA): okay {GHARDAIA, (32.0,3.0)}
+insert-later(PKO): okay {PARAKOU, (9.0,2.0)}
+insert-later(OUA): okay {OUAGADOUGOU, (12.0,-1.0)}
+insert-later(BOY): okay {BOBO-DIOULASSO, (11.0,-4.0)}
+insert-later(ACC): okay {ACCRA, (5.0,0.0)}
+insert-later(TML): okay {TAMALE, (9.0,0.0)}
+insert-later(GLO): okay {GOLOUCHESTERSHIRE, (51.0,-2.0)}
+insert-later(OGX): okay {OUARGLA, (31.0,5.0)}
+insert-later(IAM): okay {ZARZAITINE, (28.0,9.0)}
+insert-later(COO): okay {COTONOU, (6.0,2.0)}
+insert-later(TLM): okay {TLEMCEN, (35.0,-1.0)}
+insert-later(ORN): okay {ORAN, (35.0,2.0)}
+insert-later(MUW): okay {GHRISS, (35.0,3.0)}
+insert-later(AZR): okay {ADRAR, (27.0,0.0)}
+insert-later(TGR): okay {TOUGGOURT, (32.0,14.0)}
+bulk-insert[100]: successful
+size: 100
+list:
+  (y=5.0)
+  (y=24.0)
+  (y=118.0)
+  (x=29.0)
+  (x=36.0)
+  (x=37.5)
+  [ {DLC: (38.0,121.0)} {HRB: (45.0,126.0)} ]
+  [ {TAO: (36.0,120.0)} {YNT: (37.0,121.0)} ]
+  (y=121.0)
+  [ {NGB: (29.0,121.0)} {SHA: (31.0,121.0)} ]
+  [ {NKG: (31.0,118.0)} ]
+  (x=-5.5)
+  (x=-5.0)
+  [ {MAG: (-5.0,145.0)} {WWK: (-3.0,143.0)} ]
+  [ {HGU: (-5.0,144.0)} ]
+  (x=-6.0)
+  [ {GKA: (-6.0,145.0)} {LAE: (-6.0,146.0)} ]
+  [ {POM: (-9.0,147.0)} ]
+  (y=28.0)
+  (y=95.0)
+  (y=106.0)
+  [ {CKG: (29.0,106.0)} {HFE: (31.0,117.0)} ]
+  [ {CTU: (30.0,103.0)} ]
+  (y=79.0)
+  [ {HTN: (37.0,79.0)} {URC: (43.0,87.0)} ]
+  [ {JOE: (62.0,29.0)} ]
+  (x=63.0)
+  (x=65.0)
+  [ {IVL: (68.0,27.0)} {KEM: (65.0,24.0)} ]
+  [ {KAJ: (64.0,27.0)} ]
+  (x=61.0)
+  [ {JYV: (62.0,25.0)} {KEV: (61.0,24.0)} ]
+  [ {HEM: (60.0,25.0)} ]
+  (x=49.0)
+  (x=53.0)
+  (y=23.0)
+  (x=61.5)
+  [ {ENF: (68.0,23.0)} {KAU: (63.0,23.0)} ]
+  [ {HEL: (60.0,24.0)} {TLL: (59.0,24.0)} ]
+  (y=10.0)
+  [ {KEL: (54.0,10.0)} {LBC: (53.0,10.0)} ]
+  [ {GWT: (54.0,8.0)} ]
+  (x=53.0)
+  (y=8.0)
+  [ {WVN: (53.0,8.0)} {XFW: (53.0,9.0)} ]
+  [ {EME: (53.0,7.0)} ]
+  (x=53.0)
+  [ {BMK: (53.0,6.0)} {NRD: (53.0,5.0)} ]
+  [ {MHG: (49.0,8.0)} ]
+  (x=32.5)
+  (y=14.0)
+  (y=14.0)
+  [ {DJE: (35.0,14.0)} {SFA: (34.0,23.0)} ]
+  [ {EBM: (34.0,14.0)} ]
+  (x=34.0)
+  [ {BSK: (34.0,5.0)} {HHN: (49.0,7.0)} ]
+  [ {TOE: (33.0,14.0)} ]
+  (x=20.0)
+  (y=9.0)
+  [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  [ {HME: (31.0,6.0)} ]
+  (x=6.0)
+  [ {ENU: (6.0,7.0)} {QUS: (12.0,6.0)} ]
+  [ {CBQ: (4.0,8.0)} ]
+  (y=-4.5)
+  (x=12.0)
+  (x=32.0)
+  (x=35.0)
+  (x=51.5)
+  [ {BHX: (52.0,-1.0)} {CVT: (52.0,-2.0)} ]
+  [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  (y=2.0)
+  [ {GHA: (32.0,3.0)} {ORN: (35.0,2.0)} ]
+  [ {TLM: (35.0,-1.0)} ]
+  (x=28.0)
+  (y=2.0)
+  [ {ELG: (30.0,2.0)} {OGX: (31.0,5.0)} ]
+  [ {TMX: (29.0,0.0)} ]
+  (x=27.0)
+  [ {AZR: (27.0,0.0)} {INZ: (27.0,2.0)} ]
+  [ {OUA: (12.0,-1.0)} ]
+  (x=6.0)
+  (y=0.5)
+  (y=2.0)
+  [ {BNI: (6.0,5.0)} {PKO: (9.0,2.0)} ]
+  [ {LRL: (9.0,1.0)} ]
+  (x=9.0)
+  [ {BOY: (11.0,-4.0)} {TML: (9.0,0.0)} ]
+  [ {NYI: (7.0,-2.0)} ]
+  (x=5.0)
+  (y=1.0)
+  [ {COO: (6.0,2.0)} {LFW: (6.0,1.0)} ]
+  [ {ACC: (5.0,0.0)} ]
+  (x=4.0)
+  [ {ABJ: (5.0,-3.0)} {TKD: (4.0,-1.0)} ]
+  [ {LXA: (0.0,0.0)} ]
+  (y=-97.0)
+  (y=-56.0)
+  (x=9.0)
+  (x=53.0)
+  [ {LDY: (55.0,-7.0)} {VEY: (63.0,-20.0)} ]
+  [ {HGO: (9.0,-5.0)} {YAY: (51.0,-56.0)} ]
+  (y=-6.0)
+  [ {BYK: (7.0,-5.0)} {DJO: (6.0,-6.0)} ]
+  [ {MJC: (7.0,-7.0)} ]
+  (y=-76.0)
+  (x=45.0)
+  [ {YFB: (63.0,-68.0)} {YFC: (45.0,-66.0)} ]
+  [ {YAW: (44.0,-63.0)} ]
+  (x=50.0)
+  [ {YAV: (50.0,-97.0)} {YBB: (68.0,-89.0)} ]
+  [ {YAM: (46.0,-84.0)} ]
+  (y=-146.5)
+  (y=-134.0)
+  (x=55.0)
+  [ {YDQ: (55.0,-120.0)} {YEV: (68.0,-133.0)} ]
+  [ {YAZ: (49.0,-125.0)} ]
+  (y=-145.0)
+  [ {GKN: (62.0,-145.0)} {SGY: (59.0,-135.0)} ]
+  [ {FAI: (64.0,-146.0)} ]
+  (y=-152.0)
+  (x=60.0)
+  [ {ENA: (60.0,-151.0)} {FBK: (64.0,-147.0)} ]
+  [ {HOM: (59.0,-151.0)} ]
+  (x=64.0)
+  [ {GAL: (64.0,-156.0)} {UTO: (65.0,-153.0)} ]
+  [ {ILI: (59.0,-154.0)} ]
+Tree structure:
+  | | | | | | [ {DLC: (38.0,121.0)} {HRB: (45.0,126.0)} ]
+  | | | | | (x=37.5)
+  | | | | | | [ {TAO: (36.0,120.0)} {YNT: (37.0,121.0)} ]
+  | | | | (x=36.0)
+  | | | | | | [ {NGB: (29.0,121.0)} {SHA: (31.0,121.0)} ]
+  | | | | | (y=121.0)
+  | | | | | | [ {NKG: (31.0,118.0)} ]
+  | | | (x=29.0)
+  | | | | | | [ {MAG: (-5.0,145.0)} {WWK: (-3.0,143.0)} ]
+  | | | | | (x=-5.0)
+  | | | | | | [ {HGU: (-5.0,144.0)} ]
+  | | | | (x=-5.5)
+  | | | | | | [ {GKA: (-6.0,145.0)} {LAE: (-6.0,146.0)} ]
+  | | | | | (x=-6.0)
+  | | | | | | [ {POM: (-9.0,147.0)} ]
+  | | (y=118.0)
+  | | | | | | [ {CKG: (29.0,106.0)} {HFE: (31.0,117.0)} ]
+  | | | | | (y=106.0)
+  | | | | | | [ {CTU: (30.0,103.0)} ]
+  | | | | (y=95.0)
+  | | | | | | [ {HTN: (37.0,79.0)} {URC: (43.0,87.0)} ]
+  | | | | | (y=79.0)
+  | | | | | | [ {JOE: (62.0,29.0)} ]
+  | | | (y=28.0)
+  | | | | | | [ {IVL: (68.0,27.0)} {KEM: (65.0,24.0)} ]
+  | | | | | (x=65.0)
+  | | | | | | [ {KAJ: (64.0,27.0)} ]
+  | | | | (x=63.0)
+  | | | | | | [ {JYV: (62.0,25.0)} {KEV: (61.0,24.0)} ]
+  | | | | | (x=61.0)
+  | | | | | | [ {HEM: (60.0,25.0)} ]
+  | (y=24.0)
+  | | | | | | [ {ENF: (68.0,23.0)} {KAU: (63.0,23.0)} ]
+  | | | | | (x=61.5)
+  | | | | | | [ {HEL: (60.0,24.0)} {TLL: (59.0,24.0)} ]
+  | | | | (y=23.0)
+  | | | | | | [ {KEL: (54.0,10.0)} {LBC: (53.0,10.0)} ]
+  | | | | | (y=10.0)
+  | | | | | | [ {GWT: (54.0,8.0)} ]
+  | | | (x=53.0)
+  | | | | | | [ {WVN: (53.0,8.0)} {XFW: (53.0,9.0)} ]
+  | | | | | (y=8.0)
+  | | | | | | [ {EME: (53.0,7.0)} ]
+  | | | | (x=53.0)
+  | | | | | | [ {BMK: (53.0,6.0)} {NRD: (53.0,5.0)} ]
+  | | | | | (x=53.0)
+  | | | | | | [ {MHG: (49.0,8.0)} ]
+  | | (x=49.0)
+  | | | | | | [ {DJE: (35.0,14.0)} {SFA: (34.0,23.0)} ]
+  | | | | | (y=14.0)
+  | | | | | | [ {EBM: (34.0,14.0)} ]
+  | | | | (y=14.0)
+  | | | | | | [ {BSK: (34.0,5.0)} {HHN: (49.0,7.0)} ]
+  | | | | | (x=34.0)
+  | | | | | | [ {TOE: (33.0,14.0)} ]
+  | | | (x=32.5)
+  | | | | | | [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  | | | | | (y=9.0)
+  | | | | | | [ {HME: (31.0,6.0)} ]
+  | | | | (x=20.0)
+  | | | | | | [ {ENU: (6.0,7.0)} {QUS: (12.0,6.0)} ]
+  | | | | | (x=6.0)
+  | | | | | | [ {CBQ: (4.0,8.0)} ]
+  (y=5.0)
+  | | | | | | [ {BHX: (52.0,-1.0)} {CVT: (52.0,-2.0)} ]
+  | | | | | (x=51.5)
+  | | | | | | [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  | | | | (x=35.0)
+  | | | | | | [ {GHA: (32.0,3.0)} {ORN: (35.0,2.0)} ]
+  | | | | | (y=2.0)
+  | | | | | | [ {TLM: (35.0,-1.0)} ]
+  | | | (x=32.0)
+  | | | | | | [ {ELG: (30.0,2.0)} {OGX: (31.0,5.0)} ]
+  | | | | | (y=2.0)
+  | | | | | | [ {TMX: (29.0,0.0)} ]
+  | | | | (x=28.0)
+  | | | | | | [ {AZR: (27.0,0.0)} {INZ: (27.0,2.0)} ]
+  | | | | | (x=27.0)
+  | | | | | | [ {OUA: (12.0,-1.0)} ]
+  | | (x=12.0)
+  | | | | | | [ {BNI: (6.0,5.0)} {PKO: (9.0,2.0)} ]
+  | | | | | (y=2.0)
+  | | | | | | [ {LRL: (9.0,1.0)} ]
+  | | | | (y=0.5)
+  | | | | | | [ {BOY: (11.0,-4.0)} {TML: (9.0,0.0)} ]
+  | | | | | (x=9.0)
+  | | | | | | [ {NYI: (7.0,-2.0)} ]
+  | | | (x=6.0)
+  | | | | | | [ {COO: (6.0,2.0)} {LFW: (6.0,1.0)} ]
+  | | | | | (y=1.0)
+  | | | | | | [ {ACC: (5.0,0.0)} ]
+  | | | | (x=5.0)
+  | | | | | | [ {ABJ: (5.0,-3.0)} {TKD: (4.0,-1.0)} ]
+  | | | | | (x=4.0)
+  | | | | | | [ {LXA: (0.0,0.0)} ]
+  | (y=-4.5)
+  | | | | | | [ {LDY: (55.0,-7.0)} {VEY: (63.0,-20.0)} ]
+  | | | | | (x=53.0)
+  | | | | | | [ {HGO: (9.0,-5.0)} {YAY: (51.0,-56.0)} ]
+  | | | | (x=9.0)
+  | | | | | | [ {BYK: (7.0,-5.0)} {DJO: (6.0,-6.0)} ]
+  | | | | | (y=-6.0)
+  | | | | | | [ {MJC: (7.0,-7.0)} ]
+  | | | (y=-56.0)
+  | | | | | | [ {YFB: (63.0,-68.0)} {YFC: (45.0,-66.0)} ]
+  | | | | | (x=45.0)
+  | | | | | | [ {YAW: (44.0,-63.0)} ]
+  | | | | (y=-76.0)
+  | | | | | | [ {YAV: (50.0,-97.0)} {YBB: (68.0,-89.0)} ]
+  | | | | | (x=50.0)
+  | | | | | | [ {YAM: (46.0,-84.0)} ]
+  | | (y=-97.0)
+  | | | | | | [ {YDQ: (55.0,-120.0)} {YEV: (68.0,-133.0)} ]
+  | | | | | (x=55.0)
+  | | | | | | [ {YAZ: (49.0,-125.0)} ]
+  | | | | (y=-134.0)
+  | | | | | | [ {GKN: (62.0,-145.0)} {SGY: (59.0,-135.0)} ]
+  | | | | | (y=-145.0)
+  | | | | | | [ {FAI: (64.0,-146.0)} ]
+  | | | (y=-146.5)
+  | | | | | | [ {ENA: (60.0,-151.0)} {FBK: (64.0,-147.0)} ]
+  | | | | | (x=60.0)
+  | | | | | | [ {HOM: (59.0,-151.0)} ]
+  | | | | (y=-152.0)
+  | | | | | | [ {GAL: (64.0,-156.0)} {UTO: (65.0,-153.0)} ]
+  | | | | | (x=64.0)
+  | | | | | | [ {ILI: (59.0,-154.0)} ]
+[Deleting all 100 points]
+delete(TMX): successful
+delete(NRD): successful
+delete(GWT): successful
+delete(TLL): successful
+delete(ENF): successful
+delete(KEV): successful
+delete(HEM): successful
+delete(HEL): successful
+delete(BSK): successful
+delete(ELG): successful
+delete(HTN): successful
+delete(URC): successful
+delete(HRB): successful
+delete(DLC): successful
+delete(NYI): successful
+delete(TKD): successful
+delete(ABJ): successful
+delete(BYK): successful
+delete(DJO): successful
+delete(HGO): successful
+delete(MJC): successful
+delete(JYV): successful
+delete(KAU): successful
+delete(KEM): successful
+delete(KAJ): successful
+delete(LDY): successful
+delete(BHX): successful
+delete(CVT): successful
+delete(BNI): successful
+delete(CBQ): successful
+delete(ENU): successful
+delete(QUS): successful
+delete(DJE): successful
+delete(EBM): successful
+delete(SFA): successful
+delete(TOE): successful
+delete(LRL): successful
+delete(LFW): successful
+delete(HHN): successful
+delete(MHG): successful
+delete(XFW): successful
+delete(KEL): successful
+delete(LBC): successful
+delete(EME): successful
+delete(WVN): successful
+delete(BMK): successful
+delete(ENA): successful
+delete(FAI): successful
+delete(FBK): successful
+delete(GAL): successful
+size: 50
+list:
+  (y=5.0)
+  (y=24.0)
+  (y=118.0)
+  (x=29.0)
+  (x=36.0)
+  [ {TAO: (36.0,120.0)} {YNT: (37.0,121.0)} ]
+  (y=121.0)
+  [ {NGB: (29.0,121.0)} {SHA: (31.0,121.0)} ]
+  [ {NKG: (31.0,118.0)} ]
+  (x=-5.5)
+  (x=-5.0)
+  [ {MAG: (-5.0,145.0)} {WWK: (-3.0,143.0)} ]
+  [ {HGU: (-5.0,144.0)} ]
+  (x=-6.0)
+  [ {GKA: (-6.0,145.0)} {LAE: (-6.0,146.0)} ]
+  [ {POM: (-9.0,147.0)} ]
+  (y=28.0)
+  (y=95.0)
+  (y=106.0)
+  [ {CKG: (29.0,106.0)} {HFE: (31.0,117.0)} ]
+  [ {CTU: (30.0,103.0)} ]
+  [ {JOE: (62.0,29.0)} ]
+  [ {IVL: (68.0,27.0)} ]
+  (y=9.0)
+  [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  [ {HME: (31.0,6.0)} ]
+  (y=-4.5)
+  (x=12.0)
+  (x=32.0)
+  (x=35.0)
+  [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  (y=2.0)
+  [ {GHA: (32.0,3.0)} {ORN: (35.0,2.0)} ]
+  [ {TLM: (35.0,-1.0)} ]
+  (x=28.0)
+  [ {OGX: (31.0,5.0)} ]
+  (x=27.0)
+  [ {AZR: (27.0,0.0)} {INZ: (27.0,2.0)} ]
+  [ {OUA: (12.0,-1.0)} ]
+  (x=6.0)
+  (y=0.5)
+  [ {PKO: (9.0,2.0)} ]
+  [ {BOY: (11.0,-4.0)} {TML: (9.0,0.0)} ]
+  (x=5.0)
+  (y=1.0)
+  [ {COO: (6.0,2.0)} ]
+  [ {ACC: (5.0,0.0)} ]
+  [ {LXA: (0.0,0.0)} ]
+  (y=-97.0)
+  (y=-56.0)
+  (x=53.0)
+  [ {VEY: (63.0,-20.0)} ]
+  [ {YAY: (51.0,-56.0)} ]
+  (y=-76.0)
+  (x=45.0)
+  [ {YFB: (63.0,-68.0)} {YFC: (45.0,-66.0)} ]
+  [ {YAW: (44.0,-63.0)} ]
+  (x=50.0)
+  [ {YAV: (50.0,-97.0)} {YBB: (68.0,-89.0)} ]
+  [ {YAM: (46.0,-84.0)} ]
+  (y=-146.5)
+  (y=-134.0)
+  (x=55.0)
+  [ {YDQ: (55.0,-120.0)} {YEV: (68.0,-133.0)} ]
+  [ {YAZ: (49.0,-125.0)} ]
+  [ {GKN: (62.0,-145.0)} {SGY: (59.0,-135.0)} ]
+  (y=-152.0)
+  [ {HOM: (59.0,-151.0)} ]
+  (x=64.0)
+  [ {UTO: (65.0,-153.0)} ]
+  [ {ILI: (59.0,-154.0)} ]
+Tree structure:
+  | | | | | [ {TAO: (36.0,120.0)} {YNT: (37.0,121.0)} ]
+  | | | | (x=36.0)
+  | | | | | | [ {NGB: (29.0,121.0)} {SHA: (31.0,121.0)} ]
+  | | | | | (y=121.0)
+  | | | | | | [ {NKG: (31.0,118.0)} ]
+  | | | (x=29.0)
+  | | | | | | [ {MAG: (-5.0,145.0)} {WWK: (-3.0,143.0)} ]
+  | | | | | (x=-5.0)
+  | | | | | | [ {HGU: (-5.0,144.0)} ]
+  | | | | (x=-5.5)
+  | | | | | | [ {GKA: (-6.0,145.0)} {LAE: (-6.0,146.0)} ]
+  | | | | | (x=-6.0)
+  | | | | | | [ {POM: (-9.0,147.0)} ]
+  | | (y=118.0)
+  | | | | | | [ {CKG: (29.0,106.0)} {HFE: (31.0,117.0)} ]
+  | | | | | (y=106.0)
+  | | | | | | [ {CTU: (30.0,103.0)} ]
+  | | | | (y=95.0)
+  | | | | | [ {JOE: (62.0,29.0)} ]
+  | | | (y=28.0)
+  | | | | [ {IVL: (68.0,27.0)} ]
+  | (y=24.0)
+  | | | [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  | | (y=9.0)
+  | | | [ {HME: (31.0,6.0)} ]
+  (y=5.0)
+  | | | | | [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  | | | | (x=35.0)
+  | | | | | | [ {GHA: (32.0,3.0)} {ORN: (35.0,2.0)} ]
+  | | | | | (y=2.0)
+  | | | | | | [ {TLM: (35.0,-1.0)} ]
+  | | | (x=32.0)
+  | | | | | [ {OGX: (31.0,5.0)} ]
+  | | | | (x=28.0)
+  | | | | | | [ {AZR: (27.0,0.0)} {INZ: (27.0,2.0)} ]
+  | | | | | (x=27.0)
+  | | | | | | [ {OUA: (12.0,-1.0)} ]
+  | | (x=12.0)
+  | | | | | [ {PKO: (9.0,2.0)} ]
+  | | | | (y=0.5)
+  | | | | | [ {BOY: (11.0,-4.0)} {TML: (9.0,0.0)} ]
+  | | | (x=6.0)
+  | | | | | | [ {COO: (6.0,2.0)} ]
+  | | | | | (y=1.0)
+  | | | | | | [ {ACC: (5.0,0.0)} ]
+  | | | | (x=5.0)
+  | | | | | [ {LXA: (0.0,0.0)} ]
+  | (y=-4.5)
+  | | | | | [ {VEY: (63.0,-20.0)} ]
+  | | | | (x=53.0)
+  | | | | | [ {YAY: (51.0,-56.0)} ]
+  | | | (y=-56.0)
+  | | | | | | [ {YFB: (63.0,-68.0)} {YFC: (45.0,-66.0)} ]
+  | | | | | (x=45.0)
+  | | | | | | [ {YAW: (44.0,-63.0)} ]
+  | | | | (y=-76.0)
+  | | | | | | [ {YAV: (50.0,-97.0)} {YBB: (68.0,-89.0)} ]
+  | | | | | (x=50.0)
+  | | | | | | [ {YAM: (46.0,-84.0)} ]
+  | | (y=-97.0)
+  | | | | | | [ {YDQ: (55.0,-120.0)} {YEV: (68.0,-133.0)} ]
+  | | | | | (x=55.0)
+  | | | | | | [ {YAZ: (49.0,-125.0)} ]
+  | | | | (y=-134.0)
+  | | | | | [ {GKN: (62.0,-145.0)} {SGY: (59.0,-135.0)} ]
+  | | | (y=-146.5)
+  | | | | | [ {HOM: (59.0,-151.0)} ]
+  | | | | (y=-152.0)
+  | | | | | | [ {UTO: (65.0,-153.0)} ]
+  | | | | | (x=64.0)
+  | | | | | | [ {ILI: (59.0,-154.0)} ]
+delete(GKN): successful
+delete(SGY): successful
+delete(HOM): successful
+delete(ILI): successful
+delete(UTO): successful
+delete(NGB): successful
+delete(NKG): successful
+delete(HFE): successful
+delete(TAO): successful
+delete(SHA): successful
+delete(YNT): successful
+delete(CKG): successful
+delete(LXA): successful
+delete(CTU): successful
+delete(HME): successful
+delete(INZ): successful
+delete(YEV): successful
+delete(YFB): successful
+delete(YFC): successful
+delete(IVL): successful
+delete(JOE): successful
+delete(GKA): successful
+delete(MAG): successful
+delete(HGU): successful
+delete(LAE): successful
+size: 25
+list:
+  (y=5.0)
+  (y=24.0)
+  (x=-5.5)
+  [ {WWK: (-3.0,143.0)} ]
+  [ {POM: (-9.0,147.0)} ]
+  [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  (y=-4.5)
+  (x=12.0)
+  (x=32.0)
+  (x=35.0)
+  [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  (y=2.0)
+  [ {GHA: (32.0,3.0)} {ORN: (35.0,2.0)} ]
+  [ {TLM: (35.0,-1.0)} ]
+  (x=28.0)
+  [ {OGX: (31.0,5.0)} ]
+  (x=27.0)
+  [ {AZR: (27.0,0.0)} ]
+  [ {OUA: (12.0,-1.0)} ]
+  (x=6.0)
+  (y=0.5)
+  [ {PKO: (9.0,2.0)} ]
+  [ {BOY: (11.0,-4.0)} {TML: (9.0,0.0)} ]
+  (y=1.0)
+  [ {COO: (6.0,2.0)} ]
+  [ {ACC: (5.0,0.0)} ]
+  (y=-97.0)
+  (y=-56.0)
+  (x=53.0)
+  [ {VEY: (63.0,-20.0)} ]
+  [ {YAY: (51.0,-56.0)} ]
+  (y=-76.0)
+  [ {YAW: (44.0,-63.0)} ]
+  (x=50.0)
+  [ {YAV: (50.0,-97.0)} {YBB: (68.0,-89.0)} ]
+  [ {YAM: (46.0,-84.0)} ]
+  (x=55.0)
+  [ {YDQ: (55.0,-120.0)} ]
+  [ {YAZ: (49.0,-125.0)} ]
+Tree structure:
+  | | | [ {WWK: (-3.0,143.0)} ]
+  | | (x=-5.5)
+  | | | [ {POM: (-9.0,147.0)} ]
+  | (y=24.0)
+  | | [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  (y=5.0)
+  | | | | | [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  | | | | (x=35.0)
+  | | | | | | [ {GHA: (32.0,3.0)} {ORN: (35.0,2.0)} ]
+  | | | | | (y=2.0)
+  | | | | | | [ {TLM: (35.0,-1.0)} ]
+  | | | (x=32.0)
+  | | | | | [ {OGX: (31.0,5.0)} ]
+  | | | | (x=28.0)
+  | | | | | | [ {AZR: (27.0,0.0)} ]
+  | | | | | (x=27.0)
+  | | | | | | [ {OUA: (12.0,-1.0)} ]
+  | | (x=12.0)
+  | | | | | [ {PKO: (9.0,2.0)} ]
+  | | | | (y=0.5)
+  | | | | | [ {BOY: (11.0,-4.0)} {TML: (9.0,0.0)} ]
+  | | | (x=6.0)
+  | | | | | [ {COO: (6.0,2.0)} ]
+  | | | | (y=1.0)
+  | | | | | [ {ACC: (5.0,0.0)} ]
+  | (y=-4.5)
+  | | | | | [ {VEY: (63.0,-20.0)} ]
+  | | | | (x=53.0)
+  | | | | | [ {YAY: (51.0,-56.0)} ]
+  | | | (y=-56.0)
+  | | | | | [ {YAW: (44.0,-63.0)} ]
+  | | | | (y=-76.0)
+  | | | | | | [ {YAV: (50.0,-97.0)} {YBB: (68.0,-89.0)} ]
+  | | | | | (x=50.0)
+  | | | | | | [ {YAM: (46.0,-84.0)} ]
+  | | (y=-97.0)
+  | | | | [ {YDQ: (55.0,-120.0)} ]
+  | | | (x=55.0)
+  | | | | [ {YAZ: (49.0,-125.0)} ]
+delete(POM): successful
+delete(WWK): successful
+delete(VEY): successful
+delete(YAM): successful
+delete(YAV): successful
+delete(YAW): successful
+delete(YAY): successful
+delete(YAZ): successful
+delete(YBB): successful
+delete(YDQ): successful
+delete(GHA): successful
+delete(PKO): successful
+delete(OUA): successful
+delete(BOY): successful
+delete(ACC): successful
+size: 10
+list:
+  (y=5.0)
+  [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  (x=12.0)
+  (x=32.0)
+  (x=35.0)
+  [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  (y=2.0)
+  [ {ORN: (35.0,2.0)} ]
+  [ {TLM: (35.0,-1.0)} ]
+  (x=28.0)
+  [ {OGX: (31.0,5.0)} ]
+  [ {AZR: (27.0,0.0)} ]
+  (x=6.0)
+  [ {TML: (9.0,0.0)} ]
+  [ {COO: (6.0,2.0)} ]
+Tree structure:
+  | [ {IAM: (28.0,9.0)} {TGR: (32.0,14.0)} ]
+  (y=5.0)
+  | | | | [ {GLO: (51.0,-2.0)} {MUW: (35.0,3.0)} ]
+  | | | (x=35.0)
+  | | | | | [ {ORN: (35.0,2.0)} ]
+  | | | | (y=2.0)
+  | | | | | [ {TLM: (35.0,-1.0)} ]
+  | | (x=32.0)
+  | | | | [ {OGX: (31.0,5.0)} ]
+  | | | (x=28.0)
+  | | | | [ {AZR: (27.0,0.0)} ]
+  | (x=12.0)
+  | | | [ {TML: (9.0,0.0)} ]
+  | | (x=6.0)
+  | | | [ {COO: (6.0,2.0)} ]
+delete(TML): successful
+delete(GLO): successful
+delete(OGX): successful
+delete(IAM): successful
+delete(COO): successful
+size: 5
+list:
+  (y=5.0)
+  [ {TGR: (32.0,14.0)} ]
+  (x=32.0)
+  (x=35.0)
+  [ {MUW: (35.0,3.0)} ]
+  (y=2.0)
+  [ {ORN: (35.0,2.0)} ]
+  [ {TLM: (35.0,-1.0)} ]
+  [ {AZR: (27.0,0.0)} ]
+Tree structure:
+  | [ {TGR: (32.0,14.0)} ]
+  (y=5.0)
+  | | | [ {MUW: (35.0,3.0)} ]
+  | | (x=35.0)
+  | | | | [ {ORN: (35.0,2.0)} ]
+  | | | (y=2.0)
+  | | | | [ {TLM: (35.0,-1.0)} ]
+  | (x=32.0)
+  | | [ {AZR: (27.0,0.0)} ]
+delete(TLM): successful
+delete(ORN): successful
+delete(MUW): successful
+size: 2
+list:
+  (y=5.0)
+  [ {TGR: (32.0,14.0)} ]
+  [ {AZR: (27.0,0.0)} ]
+Tree structure:
+  | [ {TGR: (32.0,14.0)} ]
+  (y=5.0)
+  | [ {AZR: (27.0,0.0)} ]
+delete(AZR): successful
+delete(TGR): successful
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]

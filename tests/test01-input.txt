@@ -1,0 +1,118 @@
+comment:Bucket size = 2. Tests deletion
+initialize:2:0:10:0:10:1
+insert-later:ATL:Atlanta:1:5
+insert-later:JFK:New York:9:4
+insert-later:BWI:Baltimore:8:8
+insert-later:SEA:Seattle:5:5
+insert-later:SFO:San Francisco:1:9
+insert-later:ORD:Chicago:2:6
+insert-later:DFW:Dallas-Fort Worth:3:8
+insert-later:DCA:Washington:6:7
+insert-later:LAX:Los Angeles:4:2
+insert-later:IAD:Dulles:3:4
+insert-later:PVD:Providence:9:2
+insert-later:LAS:Las Vegas:1:2
+insert-later:MCO:Orlando:6:3
+comment:Bulk-inserting 13 points
+bulk-insert
+size
+list
+find:2:6
+delete:ORD
+size
+list
+find:2:6
+delete:SFO
+size
+list
+delete:SEA
+size
+list
+delete:PVD
+size
+list
+comment:This is the first deletion that causes a bucket to become empty
+delete:DCA
+size
+list
+delete:ATL
+size
+list
+delete:LAS
+size
+list
+comment:This should throw and nonexistent point exception
+delete-point:2:6
+size
+delete:BWI
+size
+list
+delete:LAX
+size
+list
+delete:MCO
+size
+list
+comment:Inserting back 3 previously deleted points
+insert-later:PVD:Providence:9:2
+insert-later:LAS:Las Vegas:1:2
+insert-later:MCO:Orlando:6:3
+bulk-insert
+delete:JFK
+size
+list
+delete:DFW
+size
+list
+delete:IAD
+size
+list
+delete:PVD
+size
+list
+delete:LAS
+size
+list
+delete:MCO
+size
+list
+comment:This should throw and nonexistent point exception
+delete-point:6:3
+clear
+insert-later:LHR:London:1:9
+insert-later:CDG:Paris:2:5
+insert-later:FRA:Frankfort:4:5
+insert-later:BKK:Bangkok:5:3
+insert-later:PEK:Beijing:5:9
+insert-later:HKG:Hong Kong:6:5
+insert-later:NRT:Tokyo:8:5
+insert-later:ICN:Seoul:9:1
+comment:Bulk-inserting 8 points
+bulk-insert
+size
+list
+comment:The next deletions involve points that lie on the splitting line
+delete:CDG
+size
+list
+delete:FRA
+size
+list
+delete:BKK
+size
+list
+delete:LHR
+size
+list
+delete:NRT
+size
+list
+delete:HKG
+size
+list
+delete:PEK
+size
+list
+delete:ICN
+size
+list

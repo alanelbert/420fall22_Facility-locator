@@ -1,0 +1,702 @@
+[Stress test for KCapFL]
+initialize: bucket-size = 2 bounding-box = [(-100.0,-1800.0),(1800.0,1800.0)] capacity = 5
+insert-later(TMX): okay {TIMIMOUN, (291.0,6.0)}
+insert-later(NRD): okay {NORDERNEY, (532.0,57.0)}
+insert-later(GWT): okay {WESTERLAND, (544.0,84.0)}
+insert-later(TLL): okay {TALLINN, (597.0,234.0)}
+insert-later(ENF): okay {ENONTEKIO, (699.0,239.0)}
+insert-later(KEV): okay {HALLI, (630.0,242.0)}
+insert-later(HEM): okay {HELSINKI, (608.0,273.0)}
+insert-later(HEL): okay {HELSINKI, (601.0,243.0)}
+insert-later(BSK): okay {BISKRA, (344.0,55.0)}
+insert-later(ELG): okay {EL GOLEA, (300.0,22.0)}
+insert-later(HTN): okay {HOTAN, (371.0,796.0)}
+insert-later(URC): okay {URUMQI, (432.0,877.0)}
+insert-later(HRB): okay {HARBIN, (455.0,1265.0)}
+insert-later(DLC): okay {DALIAN, (387.0,1211.0)}
+insert-later(NYI): okay {SUNYANI, (77.0,-29.0)}
+insert-later(TKD): okay {TAKORADI, (40.0,-12.0)}
+insert-later(ABJ): okay {ABIDJAN, (58.0,-33.0)}
+insert-later(BYK): okay {BOUAKE, (71.0,-53.0)}
+insert-later(DJO): okay {DALOA, (66.0,-65.0)}
+insert-later(HGO): okay {KORHOGO, (99.0,-55.0)}
+insert-later(MJC): okay {MAN, (71.0,-76.0)}
+insert-later(JYV): okay {JYVASKYLA, (632.0,257.0)}
+insert-later(KAU): okay {KAUHAVA, (633.0,333.0)}
+insert-later(KEM): okay {KEMI, (657.0,244.0)}
+insert-later(KAJ): okay {KAJAANI, (655.0,279.0)}
+insert-later(LDY): okay {LONDONDERRY, (540.0,-72.0)}
+insert-later(BHX): okay {BIRMINGHAM, (528.0,-13.0)}
+insert-later(CVT): okay {COVENTRY, (521.0,-23.0)}
+insert-later(BNI): okay {BENIN, (55.0,55.0)}
+insert-later(CBQ): okay {CALABAR, (44.0,88.0)}
+insert-later(ENU): okay {ENUGU, (61.0,76.0)}
+insert-later(QUS): okay {GUSAU, (122.0,67.0)}
+insert-later(DJE): okay {DJERBA, (355.0,145.0)}
+insert-later(EBM): okay {EL BORMA, (347.0,144.0)}
+insert-later(SFA): okay {SFAX, (333.0,239.0)}
+insert-later(TOE): okay {TOZEUR, (330.0,142.0)}
+insert-later(LRL): okay {NIATOUGOU, (98.0,13.0)}
+insert-later(LFW): okay {LOME, (61.0,13.0)}
+insert-later(HHN): okay {HAHN, (499.0,75.0)}
+insert-later(MHG): okay {MANNHEIM, (499.0,66.0)}
+insert-later(XFW): okay {HAMBURG, (531.0,96.0)}
+insert-later(KEL): okay {KIEL, (542.0,117.0)}
+insert-later(LBC): okay {LUEBECK, (533.0,93.0)}
+insert-later(EME): okay {EMDEN, (537.0,74.0)}
+insert-later(WVN): okay {WILHELMSHAVEN, (532.0,89.0)}
+insert-later(BMK): okay {BORKUM, (530.0,62.0)}
+insert-later(ENA): okay {KENAI, (608.0,-1513.0)}
+insert-later(FAI): okay {FAIRBANKS, (641.0,-1463.0)}
+insert-later(FBK): okay {FORT WAINWRIGHT, (644.0,-1475.0)}
+insert-later(GAL): okay {GALENA, (644.0,-1566.0)}
+insert-later(GKN): okay {GULKANA, (621.0,-1456.0)}
+insert-later(SGY): okay {SKAGWAY, (592.0,-1357.0)}
+insert-later(HOM): okay {HOMER, (599.0,-1519.0)}
+insert-later(ILI): okay {ILIAMNA, (597.0,-1544.0)}
+insert-later(UTO): okay {INDIAN MOUNTAINS, (655.0,-1539.0)}
+insert-later(NGB): okay {NINBO, (290.0,1212.0)}
+insert-later(NKG): okay {NANJING, (318.0,1183.0)}
+insert-later(HFE): okay {HEFEI, (311.0,1173.0)}
+insert-later(TAO): okay {QINGDAO, (366.0,1205.0)}
+insert-later(SHA): okay {SHANGHAI, (311.0,1211.0)}
+insert-later(YNT): okay {YANTAI, (371.0,1216.0)}
+insert-later(CKG): okay {CHONGQING, (292.0,1067.0)}
+insert-later(LXA): okay {LHASA, (0.0,0.0)}
+insert-later(CTU): okay {CHENGDU, (307.0,1034.0)}
+insert-later(HME): okay {HASSI-MESSAOUD, (311.0,69.0)}
+insert-later(INZ): okay {IN SALAH, (270.0,32.0)}
+insert-later(YEV): okay {INUVIK, (688.0,-1333.0)}
+insert-later(YFB): okay {IQALUIT, (631.0,-683.0)}
+insert-later(YFC): okay {FREDERICTON, (451.0,-663.0)}
+insert-later(IVL): okay {IVALO, (688.0,277.0)}
+insert-later(JOE): okay {JOENSUU, (621.0,296.0)}
+insert-later(GKA): okay {GOROKA, (-62.0,1457.0)}
+insert-later(MAG): okay {MADANG, (-55.0,1455.0)}
+insert-later(HGU): okay {MOUNT HAGEN, (-57.0,1444.0)}
+insert-later(LAE): okay {NADZAB, (-66.0,1469.0)}
+insert-later(POM): okay {PORT MORESBY, (-90.0,1472.0)}
+insert-later(WWK): okay {WEWAK, (-33.0,1423.0)}
+insert-later(VEY): okay {VESTMANNAEYJAR, (631.0,-203.0)}
+insert-later(YAM): okay {SAULT SAINTE MARIE, (461.0,-843.0)}
+insert-later(YAV): okay {WINNIPEG, (500.0,-977.0)}
+insert-later(YAW): okay {HALIFAX, (441.0,-636.0)}
+insert-later(YAY): okay {ST. ANTHONY, (512.0,-567.0)}
+insert-later(YAZ): okay {TOFINO, (499.0,-1259.0)}
+insert-later(YBB): okay {PELLY BAY, (687.0,-894.0)}
+insert-later(YDQ): okay {DAWSON CREEK, (555.0,-1209.0)}
+insert-later(GHA): okay {GHARDAIA, (321.0,32.0)}
+insert-later(PKO): okay {PARAKOU, (98.0,23.0)}
+insert-later(OUA): okay {OUAGADOUGOU, (121.0,-13.0)}
+insert-later(BOY): okay {BOBO-DIOULASSO, (111.0,-33.0)}
+insert-later(ACC): okay {ACCRA, (55.0,0.0)}
+insert-later(TML): okay {TAMALE, (91.0,6.0)}
+insert-later(GLO): okay {GOLOUCHESTERSHIRE, (512.0,-27.0)}
+insert-later(OGX): okay {OUARGLA, (311.0,51.0)}
+insert-later(IAM): okay {ZARZAITINE, (287.0,94.0)}
+insert-later(COO): okay {COTONOU, (66.0,29.0)}
+insert-later(TLM): okay {TLEMCEN, (350.0,-12.0)}
+insert-later(ORN): okay {ORAN, (358.0,23.0)}
+insert-later(MUW): okay {GHRISS, (351.0,33.0)}
+insert-later(AZR): okay {ADRAR, (271.0,13.0)}
+insert-later(TGR): okay {TOUGGOURT, (322.0,144.0)}
+insert-later(LOO): okay {LAGHOUAT, (331.0,26.0)}
+insert-later(XIC): okay {XICHANG, (272.0,1027.0)}
+insert-later(KHG): okay {KASHI, (399.0,769.0)}
+insert-later(QAS): okay {ECH-CHELIFF, (367.0,14.0)}
+insert-later(TAF): okay {ORAN, (355.0,9.0)}
+insert-later(YFO): okay {FLIN FLON, (540.0,-1012.0)}
+insert-later(YHM): okay {HAMILTON, (428.0,-793.0)}
+insert-later(YHU): okay {MONTREAL, (451.0,-733.0)}
+insert-later(YHY): okay {HAY RIVER, (601.0,-1153.0)}
+insert-later(YHZ): okay {HALIFAX, (444.0,-622.0)}
+insert-later(YIB): okay {ATIKOKAN, (391.0,146.0)}
+insert-later(YIO): okay {POND INLET, (722.0,-777.0)}
+insert-later(YJN): okay {ST. JEAN, (455.0,-725.0)}
+insert-later(YND): okay {GATINEAU, (457.0,-764.0)}
+insert-later(YNM): okay {MATAGAMI, (499.0,-779.0)}
+insert-later(YOC): okay {OLD CROW, (670.0,-1392.0)}
+insert-later(YOD): okay {COLD LAKE, (548.0,-1103.0)}
+insert-later(YOJ): okay {HIGH LEVEL, (581.0,-1173.0)}
+insert-later(YOW): okay {OTTAWA, (451.0,-753.0)}
+insert-later(YRM): okay {ROCKY MOUNTAIN HOUSE, (522.0,-1144.0)}
+insert-later(YRT): okay {RANKIN INLET, (621.0,-926.0)}
+insert-later(YSB): okay {SUDBURY, (462.0,-807.0)}
+insert-later(YSC): okay {SHERBROOKE, (455.0,-715.0)}
+insert-later(YSJ): okay {ST. JOHN, (457.0,-654.0)}
+insert-later(YWA): okay {PETAWAWA, (455.0,-779.0)}
+insert-later(YED): okay {EDMONTON, (530.0,-1132.0)}
+insert-later(YEG): okay {EDMONTON, (548.0,-1133.0)}
+insert-later(YEK): okay {ESKIMO POINT, (611.0,-943.0)}
+insert-later(YEN): okay {ESTEVAN, (491.0,-1023.0)}
+insert-later(YET): okay {EDSON, (534.0,-1166.0)}
+insert-later(YEU): okay {EUREKA, (791.0,-856.0)}
+insert-later(YWG): okay {WINNIPEG, (492.0,-977.0)}
+insert-later(YWK): okay {WABUSH, (522.0,-662.0)}
+insert-later(YWL): okay {WILLIAMS LAKE, (527.0,-1224.0)}
+insert-later(YWY): okay {WRIGLEY, (388.0,149.0)}
+insert-later(YXC): okay {CRANBROOK, (490.0,-1152.0)}
+insert-later(YYU): okay {KAPUSKASING, (498.0,-823.0)}
+insert-later(SPY): okay {SAN PEDRO, (41.0,-63.0)}
+insert-later(ASK): okay {YAMOUSSOUKRO, (61.0,-52.0)}
+insert-later(ABV): okay {ABUJA, (99.0,77.0)}
+insert-later(AKR): okay {AKURE, (71.0,56.0)}
+insert-later(YYW): okay {ARMSTRONG, (502.0,-887.0)}
+insert-later(YYY): okay {MONT JOLI, (488.0,-688.0)}
+insert-later(YYZ): okay {TORONTO, (437.0,-794.0)}
+insert-later(CZL): okay {CONSTANTINE, (366.0,69.0)}
+insert-later(TEE): okay {TEBESSA, (350.0,92.0)}
+insert-later(HRM): okay {TILREMPT, (328.0,23.0)}
+insert-later(TID): okay {TIARET, (352.0,13.0)}
+insert-later(TIN): okay {TINDOUF, (271.0,-83.0)}
+insert-later(BLI): okay {BELLINGHAM, (677.0,-966.0)}
+[Building the kCapFL for 150 points]
+kfl-build[150]: successful
+kfl-list-kd-tree:
+  (y=7.5)
+  (y=142.0)
+  (y=782.5)
+  (y=1211.0)
+  (x=-44.0)
+  (x=371.0)
+  (x=387.0)
+  [ {DLC: (387.0,1211.0)} {HRB: (455.0,1265.0)} ]
+  [ {YNT: (371.0,1216.0)} ]
+  [ {NGB: (290.0,1212.0)} {WWK: (-33.0,1423.0)} ]
+  (x=-62.0)
+  (y=1455.0)
+  [ {GKA: (-62.0,1457.0)} {MAG: (-55.0,1455.0)} ]
+  [ {HGU: (-57.0,1444.0)} ]
+  [ {LAE: (-66.0,1469.0)} {POM: (-90.0,1472.0)} ]
+  (y=1067.0)
+  (y=1183.0)
+  (x=318.0)
+  [ {NKG: (318.0,1183.0)} {TAO: (366.0,1205.0)} ]
+  [ {SHA: (311.0,1211.0)} ]
+  [ {CKG: (292.0,1067.0)} {HFE: (311.0,1173.0)} ]
+  (y=952.0)
+  [ {CTU: (307.0,1034.0)} {XIC: (272.0,1027.0)} ]
+  [ {HTN: (371.0,796.0)} {URC: (432.0,877.0)} ]
+  (y=242.0)
+  (y=275.0)
+  (y=296.0)
+  (y=333.0)
+  [ {KAU: (633.0,333.0)} {KHG: (399.0,769.0)} ]
+  [ {JOE: (621.0,296.0)} ]
+  [ {IVL: (688.0,277.0)} {KAJ: (655.0,279.0)} ]
+  (x=630.0)
+  (x=632.0)
+  [ {JYV: (632.0,257.0)} {KEM: (657.0,244.0)} ]
+  [ {KEV: (630.0,242.0)} ]
+  [ {HEL: (601.0,243.0)} {HEM: (608.0,273.0)} ]
+  (x=355.0)
+  (x=391.0)
+  (x=597.0)
+  [ {ENF: (699.0,239.0)} {TLL: (597.0,234.0)} ]
+  [ {YIB: (391.0,146.0)} ]
+  [ {DJE: (355.0,145.0)} {YWY: (388.0,149.0)} ]
+  (y=144.0)
+  [ {EBM: (347.0,144.0)} {SFA: (333.0,239.0)} ]
+  [ {TGR: (322.0,144.0)} {TOE: (330.0,142.0)} ]
+  (x=331.0)
+  (x=499.0)
+  (y=79.5)
+  (y=93.0)
+  (y=96.0)
+  [ {KEL: (542.0,117.0)} {XFW: (531.0,96.0)} ]
+  [ {LBC: (533.0,93.0)} ]
+  [ {GWT: (544.0,84.0)} {WVN: (532.0,89.0)} ]
+  (x=530.0)
+  (y=62.0)
+  [ {BMK: (530.0,62.0)} {EME: (537.0,74.0)} ]
+  [ {NRD: (532.0,57.0)} ]
+  [ {HHN: (499.0,75.0)} {MHG: (499.0,66.0)} ]
+  (y=26.0)
+  (y=55.0)
+  (y=69.0)
+  [ {CZL: (366.0,69.0)} {TEE: (350.0,92.0)} ]
+  [ {BSK: (344.0,55.0)} ]
+  [ {LOO: (331.0,26.0)} {MUW: (351.0,33.0)} ]
+  (x=356.5)
+  [ {ORN: (358.0,23.0)} {QAS: (367.0,14.0)} ]
+  [ {TAF: (355.0,9.0)} {TID: (352.0,13.0)} ]
+  (x=110.5)
+  (x=300.0)
+  (y=32.0)
+  (y=51.0)
+  [ {HME: (311.0,69.0)} {OGX: (311.0,51.0)} ]
+  [ {GHA: (321.0,32.0)} ]
+  [ {ELG: (300.0,22.0)} {HRM: (328.0,23.0)} ]
+  (x=270.5)
+  [ {AZR: (271.0,13.0)} {IAM: (287.0,94.0)} ]
+  [ {INZ: (270.0,32.0)} {QUS: (122.0,67.0)} ]
+  (y=55.0)
+  (x=61.0)
+  (x=71.0)
+  [ {ABV: (99.0,77.0)} {AKR: (71.0,56.0)} ]
+  [ {ENU: (61.0,76.0)} ]
+  [ {BNI: (55.0,55.0)} {CBQ: (44.0,88.0)} ]
+  (x=82.0)
+  [ {LRL: (98.0,13.0)} {PKO: (98.0,23.0)} ]
+  [ {COO: (66.0,29.0)} {LFW: (61.0,13.0)} ]
+  (y=-779.0)
+  (y=-74.0)
+  (x=91.0)
+  (x=320.5)
+  (x=521.0)
+  (y=-23.0)
+  [ {BHX: (528.0,-13.0)} {CVT: (521.0,-23.0)} ]
+  [ {LDY: (540.0,-72.0)} ]
+  [ {GLO: (512.0,-27.0)} {TLM: (350.0,-12.0)} ]
+  (x=111.0)
+  (x=121.0)
+  [ {OUA: (121.0,-13.0)} {TMX: (291.0,6.0)} ]
+  [ {BOY: (111.0,-33.0)} ]
+  [ {HGO: (99.0,-55.0)} {TML: (91.0,6.0)} ]
+  (x=58.0)
+  (y=-52.0)
+  (y=-33.0)
+  [ {ABJ: (58.0,-33.0)} {NYI: (77.0,-29.0)} ]
+  [ {ASK: (61.0,-52.0)} ]
+  [ {BYK: (71.0,-53.0)} {DJO: (66.0,-65.0)} ]
+  (y=-6.0)
+  [ {ACC: (55.0,0.0)} {LXA: (0.0,0.0)} ]
+  [ {SPY: (41.0,-63.0)} {TKD: (40.0,-12.0)} ]
+  (y=-683.0)
+  (y=-629.0)
+  (x=444.0)
+  (y=-567.0)
+  [ {VEY: (631.0,-203.0)} {YAY: (512.0,-567.0)} ]
+  [ {YHZ: (444.0,-622.0)} ]
+  [ {MJC: (71.0,-76.0)} {TIN: (271.0,-83.0)} ]
+  (x=457.0)
+  (x=522.0)
+  [ {YFB: (631.0,-683.0)} {YWK: (522.0,-662.0)} ]
+  [ {YSJ: (457.0,-654.0)} ]
+  [ {YAW: (441.0,-636.0)} {YFC: (451.0,-663.0)} ]
+  (x=455.0)
+  (x=488.0)
+  (x=499.0)
+  [ {YIO: (722.0,-777.0)} {YNM: (499.0,-779.0)} ]
+  [ {YYY: (488.0,-688.0)} ]
+  [ {YND: (457.0,-764.0)} {YSC: (455.0,-715.0)} ]
+  (y=-743.0)
+  [ {YHU: (451.0,-733.0)} {YJN: (455.0,-725.0)} ]
+  [ {YOW: (451.0,-753.0)} {YWA: (455.0,-779.0)} ]
+  (y=-1144.0)
+  (x=522.0)
+  (y=-989.0)
+  (x=677.0)
+  (x=687.0)
+  [ {YBB: (687.0,-894.0)} {YEU: (791.0,-856.0)} ]
+  [ {BLI: (677.0,-966.0)} ]
+  [ {YEK: (611.0,-943.0)} {YRT: (621.0,-926.0)} ]
+  (y=-1132.0)
+  (y=-1103.0)
+  [ {YFO: (540.0,-1012.0)} {YOD: (548.0,-1103.0)} ]
+  [ {YED: (530.0,-1132.0)} ]
+  [ {YEG: (548.0,-1133.0)} {YRM: (522.0,-1144.0)} ]
+  (y=-843.0)
+  (x=461.0)
+  (x=462.0)
+  [ {YSB: (462.0,-807.0)} {YYU: (498.0,-823.0)} ]
+  [ {YAM: (461.0,-843.0)} ]
+  [ {YHM: (428.0,-793.0)} {YYZ: (437.0,-794.0)} ]
+  (y=-977.0)
+  [ {YAV: (500.0,-977.0)} {YYW: (502.0,-887.0)} ]
+  [ {YEN: (491.0,-1023.0)} {YWG: (492.0,-977.0)} ]
+  (y=-1374.5)
+  (y=-1209.0)
+  (x=555.0)
+  (y=-1173.0)
+  [ {YHY: (601.0,-1153.0)} {YOJ: (581.0,-1173.0)} ]
+  [ {YDQ: (555.0,-1209.0)} ]
+  [ {YET: (534.0,-1166.0)} {YXC: (490.0,-1152.0)} ]
+  (x=559.5)
+  [ {SGY: (592.0,-1357.0)} {YEV: (688.0,-1333.0)} ]
+  [ {YAZ: (499.0,-1259.0)} {YWL: (527.0,-1224.0)} ]
+  (y=-1513.0)
+  (y=-1463.0)
+  (y=-1456.0)
+  [ {GKN: (621.0,-1456.0)} {YOC: (670.0,-1392.0)} ]
+  [ {FAI: (641.0,-1463.0)} ]
+  [ {ENA: (608.0,-1513.0)} {FBK: (644.0,-1475.0)} ]
+  (x=621.5)
+  [ {GAL: (644.0,-1566.0)} {UTO: (655.0,-1539.0)} ]
+  [ {HOM: (599.0,-1519.0)} {ILI: (597.0,-1544.0)} ]
+Tree structure:
+  | | | | | | | [ {DLC: (387.0,1211.0)} {HRB: (455.0,1265.0)} ]
+  | | | | | | (x=387.0)
+  | | | | | | | [ {YNT: (371.0,1216.0)} ]
+  | | | | | (x=371.0)
+  | | | | | | [ {NGB: (290.0,1212.0)} {WWK: (-33.0,1423.0)} ]
+  | | | | (x=-44.0)
+  | | | | | | | [ {GKA: (-62.0,1457.0)} {MAG: (-55.0,1455.0)} ]
+  | | | | | | (y=1455.0)
+  | | | | | | | [ {HGU: (-57.0,1444.0)} ]
+  | | | | | (x=-62.0)
+  | | | | | | [ {LAE: (-66.0,1469.0)} {POM: (-90.0,1472.0)} ]
+  | | | (y=1211.0)
+  | | | | | | | [ {NKG: (318.0,1183.0)} {TAO: (366.0,1205.0)} ]
+  | | | | | | (x=318.0)
+  | | | | | | | [ {SHA: (311.0,1211.0)} ]
+  | | | | | (y=1183.0)
+  | | | | | | [ {CKG: (292.0,1067.0)} {HFE: (311.0,1173.0)} ]
+  | | | | (y=1067.0)
+  | | | | | | [ {CTU: (307.0,1034.0)} {XIC: (272.0,1027.0)} ]
+  | | | | | (y=952.0)
+  | | | | | | [ {HTN: (371.0,796.0)} {URC: (432.0,877.0)} ]
+  | | (y=782.5)
+  | | | | | | | [ {KAU: (633.0,333.0)} {KHG: (399.0,769.0)} ]
+  | | | | | | (y=333.0)
+  | | | | | | | [ {JOE: (621.0,296.0)} ]
+  | | | | | (y=296.0)
+  | | | | | | [ {IVL: (688.0,277.0)} {KAJ: (655.0,279.0)} ]
+  | | | | (y=275.0)
+  | | | | | | | [ {JYV: (632.0,257.0)} {KEM: (657.0,244.0)} ]
+  | | | | | | (x=632.0)
+  | | | | | | | [ {KEV: (630.0,242.0)} ]
+  | | | | | (x=630.0)
+  | | | | | | [ {HEL: (601.0,243.0)} {HEM: (608.0,273.0)} ]
+  | | | (y=242.0)
+  | | | | | | | [ {ENF: (699.0,239.0)} {TLL: (597.0,234.0)} ]
+  | | | | | | (x=597.0)
+  | | | | | | | [ {YIB: (391.0,146.0)} ]
+  | | | | | (x=391.0)
+  | | | | | | [ {DJE: (355.0,145.0)} {YWY: (388.0,149.0)} ]
+  | | | | (x=355.0)
+  | | | | | | [ {EBM: (347.0,144.0)} {SFA: (333.0,239.0)} ]
+  | | | | | (y=144.0)
+  | | | | | | [ {TGR: (322.0,144.0)} {TOE: (330.0,142.0)} ]
+  | (y=142.0)
+  | | | | | | | [ {KEL: (542.0,117.0)} {XFW: (531.0,96.0)} ]
+  | | | | | | (y=96.0)
+  | | | | | | | [ {LBC: (533.0,93.0)} ]
+  | | | | | (y=93.0)
+  | | | | | | [ {GWT: (544.0,84.0)} {WVN: (532.0,89.0)} ]
+  | | | | (y=79.5)
+  | | | | | | | [ {BMK: (530.0,62.0)} {EME: (537.0,74.0)} ]
+  | | | | | | (y=62.0)
+  | | | | | | | [ {NRD: (532.0,57.0)} ]
+  | | | | | (x=530.0)
+  | | | | | | [ {HHN: (499.0,75.0)} {MHG: (499.0,66.0)} ]
+  | | | (x=499.0)
+  | | | | | | | [ {CZL: (366.0,69.0)} {TEE: (350.0,92.0)} ]
+  | | | | | | (y=69.0)
+  | | | | | | | [ {BSK: (344.0,55.0)} ]
+  | | | | | (y=55.0)
+  | | | | | | [ {LOO: (331.0,26.0)} {MUW: (351.0,33.0)} ]
+  | | | | (y=26.0)
+  | | | | | | [ {ORN: (358.0,23.0)} {QAS: (367.0,14.0)} ]
+  | | | | | (x=356.5)
+  | | | | | | [ {TAF: (355.0,9.0)} {TID: (352.0,13.0)} ]
+  | | (x=331.0)
+  | | | | | | | [ {HME: (311.0,69.0)} {OGX: (311.0,51.0)} ]
+  | | | | | | (y=51.0)
+  | | | | | | | [ {GHA: (321.0,32.0)} ]
+  | | | | | (y=32.0)
+  | | | | | | [ {ELG: (300.0,22.0)} {HRM: (328.0,23.0)} ]
+  | | | | (x=300.0)
+  | | | | | | [ {AZR: (271.0,13.0)} {IAM: (287.0,94.0)} ]
+  | | | | | (x=270.5)
+  | | | | | | [ {INZ: (270.0,32.0)} {QUS: (122.0,67.0)} ]
+  | | | (x=110.5)
+  | | | | | | | [ {ABV: (99.0,77.0)} {AKR: (71.0,56.0)} ]
+  | | | | | | (x=71.0)
+  | | | | | | | [ {ENU: (61.0,76.0)} ]
+  | | | | | (x=61.0)
+  | | | | | | [ {BNI: (55.0,55.0)} {CBQ: (44.0,88.0)} ]
+  | | | | (y=55.0)
+  | | | | | | [ {LRL: (98.0,13.0)} {PKO: (98.0,23.0)} ]
+  | | | | | (x=82.0)
+  | | | | | | [ {COO: (66.0,29.0)} {LFW: (61.0,13.0)} ]
+  (y=7.5)
+  | | | | | | | [ {BHX: (528.0,-13.0)} {CVT: (521.0,-23.0)} ]
+  | | | | | | (y=-23.0)
+  | | | | | | | [ {LDY: (540.0,-72.0)} ]
+  | | | | | (x=521.0)
+  | | | | | | [ {GLO: (512.0,-27.0)} {TLM: (350.0,-12.0)} ]
+  | | | | (x=320.5)
+  | | | | | | | [ {OUA: (121.0,-13.0)} {TMX: (291.0,6.0)} ]
+  | | | | | | (x=121.0)
+  | | | | | | | [ {BOY: (111.0,-33.0)} ]
+  | | | | | (x=111.0)
+  | | | | | | [ {HGO: (99.0,-55.0)} {TML: (91.0,6.0)} ]
+  | | | (x=91.0)
+  | | | | | | | [ {ABJ: (58.0,-33.0)} {NYI: (77.0,-29.0)} ]
+  | | | | | | (y=-33.0)
+  | | | | | | | [ {ASK: (61.0,-52.0)} ]
+  | | | | | (y=-52.0)
+  | | | | | | [ {BYK: (71.0,-53.0)} {DJO: (66.0,-65.0)} ]
+  | | | | (x=58.0)
+  | | | | | | [ {ACC: (55.0,0.0)} {LXA: (0.0,0.0)} ]
+  | | | | | (y=-6.0)
+  | | | | | | [ {SPY: (41.0,-63.0)} {TKD: (40.0,-12.0)} ]
+  | | (y=-74.0)
+  | | | | | | | [ {VEY: (631.0,-203.0)} {YAY: (512.0,-567.0)} ]
+  | | | | | | (y=-567.0)
+  | | | | | | | [ {YHZ: (444.0,-622.0)} ]
+  | | | | | (x=444.0)
+  | | | | | | [ {MJC: (71.0,-76.0)} {TIN: (271.0,-83.0)} ]
+  | | | | (y=-629.0)
+  | | | | | | | [ {YFB: (631.0,-683.0)} {YWK: (522.0,-662.0)} ]
+  | | | | | | (x=522.0)
+  | | | | | | | [ {YSJ: (457.0,-654.0)} ]
+  | | | | | (x=457.0)
+  | | | | | | [ {YAW: (441.0,-636.0)} {YFC: (451.0,-663.0)} ]
+  | | | (y=-683.0)
+  | | | | | | | [ {YIO: (722.0,-777.0)} {YNM: (499.0,-779.0)} ]
+  | | | | | | (x=499.0)
+  | | | | | | | [ {YYY: (488.0,-688.0)} ]
+  | | | | | (x=488.0)
+  | | | | | | [ {YND: (457.0,-764.0)} {YSC: (455.0,-715.0)} ]
+  | | | | (x=455.0)
+  | | | | | | [ {YHU: (451.0,-733.0)} {YJN: (455.0,-725.0)} ]
+  | | | | | (y=-743.0)
+  | | | | | | [ {YOW: (451.0,-753.0)} {YWA: (455.0,-779.0)} ]
+  | (y=-779.0)
+  | | | | | | | [ {YBB: (687.0,-894.0)} {YEU: (791.0,-856.0)} ]
+  | | | | | | (x=687.0)
+  | | | | | | | [ {BLI: (677.0,-966.0)} ]
+  | | | | | (x=677.0)
+  | | | | | | [ {YEK: (611.0,-943.0)} {YRT: (621.0,-926.0)} ]
+  | | | | (y=-989.0)
+  | | | | | | | [ {YFO: (540.0,-1012.0)} {YOD: (548.0,-1103.0)} ]
+  | | | | | | (y=-1103.0)
+  | | | | | | | [ {YED: (530.0,-1132.0)} ]
+  | | | | | (y=-1132.0)
+  | | | | | | [ {YEG: (548.0,-1133.0)} {YRM: (522.0,-1144.0)} ]
+  | | | (x=522.0)
+  | | | | | | | [ {YSB: (462.0,-807.0)} {YYU: (498.0,-823.0)} ]
+  | | | | | | (x=462.0)
+  | | | | | | | [ {YAM: (461.0,-843.0)} ]
+  | | | | | (x=461.0)
+  | | | | | | [ {YHM: (428.0,-793.0)} {YYZ: (437.0,-794.0)} ]
+  | | | | (y=-843.0)
+  | | | | | | [ {YAV: (500.0,-977.0)} {YYW: (502.0,-887.0)} ]
+  | | | | | (y=-977.0)
+  | | | | | | [ {YEN: (491.0,-1023.0)} {YWG: (492.0,-977.0)} ]
+  | | (y=-1144.0)
+  | | | | | | | [ {YHY: (601.0,-1153.0)} {YOJ: (581.0,-1173.0)} ]
+  | | | | | | (y=-1173.0)
+  | | | | | | | [ {YDQ: (555.0,-1209.0)} ]
+  | | | | | (x=555.0)
+  | | | | | | [ {YET: (534.0,-1166.0)} {YXC: (490.0,-1152.0)} ]
+  | | | | (y=-1209.0)
+  | | | | | | [ {SGY: (592.0,-1357.0)} {YEV: (688.0,-1333.0)} ]
+  | | | | | (x=559.5)
+  | | | | | | [ {YAZ: (499.0,-1259.0)} {YWL: (527.0,-1224.0)} ]
+  | | | (y=-1374.5)
+  | | | | | | | [ {GKN: (621.0,-1456.0)} {YOC: (670.0,-1392.0)} ]
+  | | | | | | (y=-1456.0)
+  | | | | | | | [ {FAI: (641.0,-1463.0)} ]
+  | | | | | (y=-1463.0)
+  | | | | | | [ {ENA: (608.0,-1513.0)} {FBK: (644.0,-1475.0)} ]
+  | | | | (y=-1513.0)
+  | | | | | | [ {GAL: (644.0,-1566.0)} {UTO: (655.0,-1539.0)} ]
+  | | | | | (x=621.5)
+  | | | | | | [ {HOM: (599.0,-1519.0)} {ILI: (597.0,-1544.0)} ]
+kfl-extract-cluster:
+  ORN, ORAN, (358.0,23.0) sqDist = 0.0
+  TID, TIARET, (352.0,13.0) sqDist = 136.0
+  MUW, GHRISS, (351.0,33.0) sqDist = 149.0
+  QAS, ECH-CHELIFF, (367.0,14.0) sqDist = 162.0
+  TAF, ORAN, (355.0,9.0) sqDist = 205.0
+kfl-extract-cluster:
+  WVN, WILHELMSHAVEN, (532.0,89.0) sqDist = 0.0
+  LBC, LUEBECK, (533.0,93.0) sqDist = 17.0
+  XFW, HAMBURG, (531.0,96.0) sqDist = 50.0
+  GWT, WESTERLAND, (544.0,84.0) sqDist = 169.0
+  EME, EMDEN, (537.0,74.0) sqDist = 250.0
+kfl-extract-cluster:
+  ASK, YAMOUSSOUKRO, (61.0,-52.0) sqDist = 0.0
+  BYK, BOUAKE, (71.0,-53.0) sqDist = 101.0
+  DJO, DALOA, (66.0,-65.0) sqDist = 194.0
+  ABJ, ABIDJAN, (58.0,-33.0) sqDist = 370.0
+  SPY, SAN PEDRO, (41.0,-63.0) sqDist = 521.0
+kfl-extract-cluster:
+  GHA, GHARDAIA, (321.0,32.0) sqDist = 0.0
+  HRM, TILREMPT, (328.0,23.0) sqDist = 130.0
+  LOO, LAGHOUAT, (331.0,26.0) sqDist = 136.0
+  OGX, OUARGLA, (311.0,51.0) sqDist = 461.0
+  ELG, EL GOLEA, (300.0,22.0) sqDist = 541.0
+kfl-extract-cluster:
+  LAE, NADZAB, (-66.0,1469.0) sqDist = 0.0
+  GKA, GOROKA, (-62.0,1457.0) sqDist = 160.0
+  MAG, MADANG, (-55.0,1455.0) sqDist = 317.0
+  POM, PORT MORESBY, (-90.0,1472.0) sqDist = 585.0
+  HGU, MOUNT HAGEN, (-57.0,1444.0) sqDist = 706.0
+kfl-extract-cluster:
+  YOW, OTTAWA, (451.0,-753.0) sqDist = 0.0
+  YND, GATINEAU, (457.0,-764.0) sqDist = 157.0
+  YHU, MONTREAL, (451.0,-733.0) sqDist = 400.0
+  YWA, PETAWAWA, (455.0,-779.0) sqDist = 692.0
+  YJN, ST. JEAN, (455.0,-725.0) sqDist = 800.0
+kfl-extract-cluster:
+  COO, COTONOU, (66.0,29.0) sqDist = 0.0
+  LFW, LOME, (61.0,13.0) sqDist = 281.0
+  AKR, AKURE, (71.0,56.0) sqDist = 754.0
+  BNI, BENIN, (55.0,55.0) sqDist = 797.0
+  ACC, ACCRA, (55.0,0.0) sqDist = 962.0
+kfl-extract-cluster:
+  JYV, JYVASKYLA, (632.0,257.0) sqDist = 0.0
+  KEV, HALLI, (630.0,242.0) sqDist = 229.0
+  KEM, KEMI, (657.0,244.0) sqDist = 794.0
+  HEM, HELSINKI, (608.0,273.0) sqDist = 832.0
+  KAJ, KAJAANI, (655.0,279.0) sqDist = 1013.0
+kfl-extract-cluster:
+  YRM, ROCKY MOUNTAIN HOUSE, (522.0,-1144.0) sqDist = 0.0
+  YED, EDMONTON, (530.0,-1132.0) sqDist = 208.0
+  YET, EDSON, (534.0,-1166.0) sqDist = 628.0
+  YEG, EDMONTON, (548.0,-1133.0) sqDist = 797.0
+  YXC, CRANBROOK, (490.0,-1152.0) sqDist = 1088.0
+kfl-extract-cluster:
+  DJE, DJERBA, (355.0,145.0) sqDist = 0.0
+  EBM, EL BORMA, (347.0,144.0) sqDist = 65.0
+  TOE, TOZEUR, (330.0,142.0) sqDist = 634.0
+  TGR, TOUGGOURT, (322.0,144.0) sqDist = 1090.0
+  YWY, WRIGLEY, (388.0,149.0) sqDist = 1105.0
+kfl-extract-cluster:
+  TML, TAMALE, (91.0,6.0) sqDist = 0.0
+  LRL, NIATOUGOU, (98.0,13.0) sqDist = 98.0
+  PKO, PARAKOU, (98.0,23.0) sqDist = 338.0
+  OUA, OUAGADOUGOU, (121.0,-13.0) sqDist = 1261.0
+  NYI, SUNYANI, (77.0,-29.0) sqDist = 1421.0
+kfl-extract-cluster:
+  YSB, SUDBURY, (462.0,-807.0) sqDist = 0.0
+  YYZ, TORONTO, (437.0,-794.0) sqDist = 794.0
+  YAM, SAULT SAINTE MARIE, (461.0,-843.0) sqDist = 1297.0
+  YHM, HAMILTON, (428.0,-793.0) sqDist = 1352.0
+  YYU, KAPUSKASING, (498.0,-823.0) sqDist = 1552.0
+kfl-extract-cluster:
+  YFC, FREDERICTON, (451.0,-663.0) sqDist = 0.0
+  YSJ, ST. JOHN, (457.0,-654.0) sqDist = 117.0
+  YAW, HALIFAX, (441.0,-636.0) sqDist = 829.0
+  YHZ, HALIFAX, (444.0,-622.0) sqDist = 1730.0
+  YYY, MONT JOLI, (488.0,-688.0) sqDist = 1994.0
+kfl-extract-cluster:
+  NKG, NANJING, (318.0,1183.0) sqDist = 0.0
+  HFE, HEFEI, (311.0,1173.0) sqDist = 149.0
+  SHA, SHANGHAI, (311.0,1211.0) sqDist = 833.0
+  NGB, NINBO, (290.0,1212.0) sqDist = 1625.0
+  TAO, QINGDAO, (366.0,1205.0) sqDist = 2788.0
+kfl-extract-cluster:
+  ENA, KENAI, (608.0,-1513.0) sqDist = 0.0
+  HOM, HOMER, (599.0,-1519.0) sqDist = 117.0
+  ILI, ILIAMNA, (597.0,-1544.0) sqDist = 1082.0
+  FBK, FORT WAINWRIGHT, (644.0,-1475.0) sqDist = 2740.0
+  UTO, INDIAN MOUNTAINS, (655.0,-1539.0) sqDist = 2885.0
+kfl-extract-cluster:
+  HME, HASSI-MESSAOUD, (311.0,69.0) sqDist = 0.0
+  IAM, ZARZAITINE, (287.0,94.0) sqDist = 1201.0
+  BSK, BISKRA, (344.0,55.0) sqDist = 1285.0
+  TEE, TEBESSA, (350.0,92.0) sqDist = 2050.0
+  CZL, CONSTANTINE, (366.0,69.0) sqDist = 3025.0
+kfl-extract-cluster:
+  BMK, BORKUM, (530.0,62.0) sqDist = 0.0
+  NRD, NORDERNEY, (532.0,57.0) sqDist = 29.0
+  MHG, MANNHEIM, (499.0,66.0) sqDist = 977.0
+  HHN, HAHN, (499.0,75.0) sqDist = 1130.0
+  KEL, KIEL, (542.0,117.0) sqDist = 3169.0
+kfl-extract-cluster:
+  JOE, JOENSUU, (621.0,296.0) sqDist = 0.0
+  KAU, KAUHAVA, (633.0,333.0) sqDist = 1513.0
+  HEL, HELSINKI, (601.0,243.0) sqDist = 3209.0
+  TLL, TALLINN, (597.0,234.0) sqDist = 4420.0
+  IVL, IVALO, (688.0,277.0) sqDist = 4850.0
+kfl-extract-cluster:
+  TKD, TAKORADI, (40.0,-12.0) sqDist = 0.0
+  LXA, LHASA, (0.0,0.0) sqDist = 1744.0
+  MJC, MAN, (71.0,-76.0) sqDist = 5057.0
+  HGO, KORHOGO, (99.0,-55.0) sqDist = 5330.0
+  BOY, BOBO-DIOULASSO, (111.0,-33.0) sqDist = 5482.0
+kfl-extract-cluster:
+  YDQ, DAWSON CREEK, (555.0,-1209.0) sqDist = 0.0
+  YWL, WILLIAMS LAKE, (527.0,-1224.0) sqDist = 1009.0
+  YOJ, HIGH LEVEL, (581.0,-1173.0) sqDist = 1972.0
+  YHY, HAY RIVER, (601.0,-1153.0) sqDist = 5252.0
+  YAZ, TOFINO, (499.0,-1259.0) sqDist = 5636.0
+kfl-extract-cluster:
+  YOC, OLD CROW, (670.0,-1392.0) sqDist = 0.0
+  YEV, INUVIK, (688.0,-1333.0) sqDist = 3805.0
+  FAI, FAIRBANKS, (641.0,-1463.0) sqDist = 5882.0
+  GKN, GULKANA, (621.0,-1456.0) sqDist = 6497.0
+  SGY, SKAGWAY, (592.0,-1357.0) sqDist = 7309.0
+kfl-extract-cluster:
+  YAV, WINNIPEG, (500.0,-977.0) sqDist = 0.0
+  YWG, WINNIPEG, (492.0,-977.0) sqDist = 64.0
+  YEN, ESTEVAN, (491.0,-1023.0) sqDist = 2197.0
+  YFO, FLIN FLON, (540.0,-1012.0) sqDist = 2825.0
+  YYW, ARMSTRONG, (502.0,-887.0) sqDist = 8104.0
+kfl-extract-cluster:
+  TMX, TIMIMOUN, (291.0,6.0) sqDist = 0.0
+  AZR, ADRAR, (271.0,13.0) sqDist = 449.0
+  INZ, IN SALAH, (270.0,32.0) sqDist = 1117.0
+  TLM, TLEMCEN, (350.0,-12.0) sqDist = 3805.0
+  TIN, TINDOUF, (271.0,-83.0) sqDist = 8321.0
+kfl-extract-cluster:
+  YBB, PELLY BAY, (687.0,-894.0) sqDist = 0.0
+  BLI, BELLINGHAM, (677.0,-966.0) sqDist = 5284.0
+  YRT, RANKIN INLET, (621.0,-926.0) sqDist = 5380.0
+  YEK, ESKIMO POINT, (611.0,-943.0) sqDist = 8177.0
+  YEU, EUREKA, (791.0,-856.0) sqDist = 12260.0
+kfl-extract-cluster:
+  YWK, WABUSH, (522.0,-662.0) sqDist = 0.0
+  YSC, SHERBROOKE, (455.0,-715.0) sqDist = 7298.0
+  YAY, ST. ANTHONY, (512.0,-567.0) sqDist = 9125.0
+  YFB, IQALUIT, (631.0,-683.0) sqDist = 12322.0
+  YNM, MATAGAMI, (499.0,-779.0) sqDist = 14218.0
+kfl-extract-cluster:
+  LDY, LONDONDERRY, (540.0,-72.0) sqDist = 0.0
+  CVT, COVENTRY, (521.0,-23.0) sqDist = 2762.0
+  GLO, GOLOUCHESTERSHIRE, (512.0,-27.0) sqDist = 2809.0
+  BHX, BIRMINGHAM, (528.0,-13.0) sqDist = 3625.0
+  VEY, VESTMANNAEYJAR, (631.0,-203.0) sqDist = 25442.0
+kfl-extract-cluster:
+  CKG, CHONGQING, (292.0,1067.0) sqDist = 0.0
+  CTU, CHENGDU, (307.0,1034.0) sqDist = 1314.0
+  XIC, XICHANG, (272.0,1027.0) sqDist = 2000.0
+  YNT, YANTAI, (371.0,1216.0) sqDist = 28442.0
+  DLC, DALIAN, (387.0,1211.0) sqDist = 29761.0
+kfl-extract-cluster:
+  QUS, GUSAU, (122.0,67.0) sqDist = 0.0
+  ABV, ABUJA, (99.0,77.0) sqDist = 629.0
+  ENU, ENUGU, (61.0,76.0) sqDist = 3802.0
+  CBQ, CALABAR, (44.0,88.0) sqDist = 6525.0
+  SFA, SFAX, (333.0,239.0) sqDist = 74105.0
+kfl-extract-cluster:
+  HRB, HARBIN, (455.0,1265.0) sqDist = 0.0
+  URC, URUMQI, (432.0,877.0) sqDist = 151073.0
+  HTN, HOTAN, (371.0,796.0) sqDist = 227017.0
+  KHG, KASHI, (399.0,769.0) sqDist = 249152.0
+  WWK, WEWAK, (-33.0,1423.0) sqDist = 263108.0
+kfl-list-kd-tree:
+  (y=7.5)
+  (x=597.0)
+  [ {ENF: (699.0,239.0)} ]
+  [ {YIB: (391.0,146.0)} ]
+  (y=-779.0)
+  [ {YIO: (722.0,-777.0)} ]
+  (y=-1144.0)
+  [ {YOD: (548.0,-1103.0)} ]
+  [ {GAL: (644.0,-1566.0)} ]
+Tree structure:
+  | | [ {ENF: (699.0,239.0)} ]
+  | (x=597.0)
+  | | [ {YIB: (391.0,146.0)} ]
+  (y=7.5)
+  | | [ {YIO: (722.0,-777.0)} ]
+  | (y=-779.0)
+  | | | [ {YOD: (548.0,-1103.0)} ]
+  | | (y=-1144.0)
+  | | | [ {GAL: (644.0,-1566.0)} ]
+kfl-extract-cluster:
+  YIO, POND INLET, (722.0,-777.0) sqDist = 0.0
+  YOD, COLD LAKE, (548.0,-1103.0) sqDist = 136552.0
+  GAL, GALENA, (644.0,-1566.0) sqDist = 628605.0
+  YIB, ATIKOKAN, (391.0,146.0) sqDist = 961490.0
+  ENF, ENONTEKIO, (699.0,239.0) sqDist = 1032785.0
+kfl-list-kd-tree:
+  [ ]
+Tree structure:
+  [ ]

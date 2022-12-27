@@ -1,0 +1,154 @@
+[Bucket size = 1. Tests k-nearest neighbors]
+initialize: bucket-size = 1 bounding-box = [(0.0,0.0),(100.0,100.0)] capacity = 1
+insert-later(ATL): okay {Atlanta, (11.0,51.0)}
+insert-later(JFK): okay {New York, (92.0,42.0)}
+insert-later(BWI): okay {Baltimore, (83.0,83.0)}
+insert-later(SEA): okay {Seattle, (54.0,54.0)}
+insert-later(SFO): okay {San Francisco, (15.0,95.0)}
+insert-later(ORD): okay {Chicago, (26.0,66.0)}
+insert-later(DFW): okay {Dallas-Fort Worth, (37.0,87.0)}
+insert-later(DCA): okay {Washington, (68.0,77.0)}
+insert-later(LAX): okay {Los Angeles, (49.0,28.0)}
+insert-later(IAD): okay {Dulles, (30.0,40.0)}
+insert-later(PVD): okay {Providence, (91.0,21.0)}
+insert-later(LAS): okay {Las Vegas, (12.0,22.0)}
+insert-later(MCO): okay {Orlando, (63.0,33.0)}
+[Bulk-inserting 13 points]
+bulk-insert[13]: successful
+size: 13
+list:
+  (x=49.0)
+  (y=42.0)
+  (y=65.5)
+  (x=75.5)
+  [ {BWI: (83.0,83.0)} ]
+  [ {DCA: (68.0,77.0)} ]
+  (x=73.0)
+  [ {JFK: (92.0,42.0)} ]
+  [ {SEA: (54.0,54.0)} ]
+  (x=63.0)
+  (x=77.0)
+  [ {PVD: (91.0,21.0)} ]
+  [ {MCO: (63.0,33.0)} ]
+  [ {LAX: (49.0,28.0)} ]
+  (y=58.5)
+  (y=87.0)
+  (x=26.0)
+  [ {DFW: (37.0,87.0)} ]
+  [ {SFO: (15.0,95.0)} ]
+  [ {ORD: (26.0,66.0)} ]
+  (y=40.0)
+  (x=20.5)
+  [ {IAD: (30.0,40.0)} ]
+  [ {ATL: (11.0,51.0)} ]
+  [ {LAS: (12.0,22.0)} ]
+Tree structure:
+  | | | | [ {BWI: (83.0,83.0)} ]
+  | | | (x=75.5)
+  | | | | [ {DCA: (68.0,77.0)} ]
+  | | (y=65.5)
+  | | | | [ {JFK: (92.0,42.0)} ]
+  | | | (x=73.0)
+  | | | | [ {SEA: (54.0,54.0)} ]
+  | (y=42.0)
+  | | | | [ {PVD: (91.0,21.0)} ]
+  | | | (x=77.0)
+  | | | | [ {MCO: (63.0,33.0)} ]
+  | | (x=63.0)
+  | | | [ {LAX: (49.0,28.0)} ]
+  (x=49.0)
+  | | | | [ {DFW: (37.0,87.0)} ]
+  | | | (x=26.0)
+  | | | | [ {SFO: (15.0,95.0)} ]
+  | | (y=87.0)
+  | | | [ {ORD: (26.0,66.0)} ]
+  | (y=58.5)
+  | | | | [ {IAD: (30.0,40.0)} ]
+  | | | (x=20.5)
+  | | | | [ {ATL: (11.0,51.0)} ]
+  | | (y=40.0)
+  | | | [ {LAS: (12.0,22.0)} ]
+nearest-neighbor(0.0,0.0): LAS (d=628.0)
+k-nearest-neighbor(1,(0.0,0.0)) = [ LAS (d=628.0) ]
+k-nearest-neighbor(2,(0.0,0.0)) = [ LAS (d=628.0) IAD (d=2500.0) ]
+k-nearest-neighbor(5,(0.0,0.0)) = [ LAS (d=628.0) IAD (d=2500.0) ATL (d=2722.0) LAX (d=3185.0) ORD (d=5032.0) ]
+k-nearest-neighbor(13,(0.0,0.0)) = [ LAS (d=628.0) IAD (d=2500.0) ATL (d=2722.0) LAX (d=3185.0) ORD (d=5032.0) MCO (d=5058.0) SEA (d=5832.0) PVD (d=8722.0) DFW (d=8938.0) SFO (d=9250.0) JFK (d=10228.0) DCA (d=10553.0) BWI (d=13778.0) ]
+k-nearest-neighbor(15,(0.0,0.0)) = [ LAS (d=628.0) IAD (d=2500.0) ATL (d=2722.0) LAX (d=3185.0) ORD (d=5032.0) MCO (d=5058.0) SEA (d=5832.0) PVD (d=8722.0) DFW (d=8938.0) SFO (d=9250.0) JFK (d=10228.0) DCA (d=10553.0) BWI (d=13778.0) ]
+k-nearest-neighbor(4,(11.0,51.0)) = [ ATL (d=0.0) ORD (d=450.0) IAD (d=482.0) LAS (d=842.0) ]
+k-nearest-neighbor(4,(92.0,42.0)) = [ JFK (d=0.0) PVD (d=442.0) MCO (d=922.0) SEA (d=1588.0) ]
+k-nearest-neighbor(4,(83.0,83.0)) = [ BWI (d=0.0) DCA (d=261.0) SEA (d=1682.0) JFK (d=1762.0) ]
+k-nearest-neighbor(4,(54.0,54.0)) = [ SEA (d=0.0) MCO (d=522.0) LAX (d=701.0) DCA (d=725.0) ]
+k-nearest-neighbor(4,(15.0,95.0)) = [ SFO (d=0.0) DFW (d=548.0) ORD (d=962.0) ATL (d=1952.0) ]
+k-nearest-neighbor(4,(26.0,66.0)) = [ ORD (d=0.0) ATL (d=450.0) DFW (d=562.0) IAD (d=692.0) ]
+k-nearest-neighbor(4,(37.0,87.0)) = [ DFW (d=0.0) SFO (d=548.0) ORD (d=562.0) DCA (d=1061.0) ]
+k-nearest-neighbor(4,(68.0,78.0)) = [ DCA (d=1.0) BWI (d=250.0) SEA (d=772.0) DFW (d=1042.0) ]
+k-nearest-neighbor(4,(49.0,29.0)) = [ LAX (d=1.0) MCO (d=212.0) IAD (d=482.0) SEA (d=650.0) ]
+k-nearest-neighbor(4,(30.0,40.0)) = [ IAD (d=0.0) ATL (d=482.0) LAX (d=505.0) LAS (d=648.0) ]
+k-nearest-neighbor(4,(91.0,21.0)) = [ PVD (d=0.0) JFK (d=442.0) MCO (d=928.0) LAX (d=1813.0) ]
+k-nearest-neighbor(4,(12.0,22.0)) = [ LAS (d=0.0) IAD (d=648.0) ATL (d=842.0) LAX (d=1405.0) ]
+k-nearest-neighbor(4,(63.0,33.0)) = [ MCO (d=0.0) LAX (d=221.0) SEA (d=522.0) JFK (d=922.0) ]
+clear: successful
+insert-later(LHR): okay {London, (11.0,91.0)}
+insert-later(CDG): okay {Paris, (22.0,50.0)}
+insert-later(FRA): okay {Frankfort, (43.0,50.0)}
+insert-later(BKK): okay {Bangkok, (50.0,34.0)}
+insert-later(PEK): okay {Beijing, (50.0,95.0)}
+insert-later(HKG): okay {Hong Kong, (66.0,50.0)}
+insert-later(NRT): okay {Tokyo, (87.0,50.0)}
+insert-later(ICN): okay {Seoul, (98.0,18.0)}
+[Bulk-inserting 8 points with many duplicate coordinates]
+bulk-insert[8]: successful
+size: 8
+list:
+  (x=50.0)
+  (y=50.0)
+  (y=72.5)
+  [ {PEK: (50.0,95.0)} ]
+  [ {NRT: (87.0,50.0)} ]
+  (x=82.0)
+  [ {ICN: (98.0,18.0)} ]
+  [ {HKG: (66.0,50.0)} ]
+  (y=50.0)
+  (y=70.5)
+  [ {LHR: (11.0,91.0)} ]
+  [ {FRA: (43.0,50.0)} ]
+  (x=36.0)
+  [ {BKK: (50.0,34.0)} ]
+  [ {CDG: (22.0,50.0)} ]
+Tree structure:
+  | | | [ {PEK: (50.0,95.0)} ]
+  | | (y=72.5)
+  | | | [ {NRT: (87.0,50.0)} ]
+  | (y=50.0)
+  | | | [ {ICN: (98.0,18.0)} ]
+  | | (x=82.0)
+  | | | [ {HKG: (66.0,50.0)} ]
+  (x=50.0)
+  | | | [ {LHR: (11.0,91.0)} ]
+  | | (y=70.5)
+  | | | [ {FRA: (43.0,50.0)} ]
+  | (y=50.0)
+  | | | [ {BKK: (50.0,34.0)} ]
+  | | (x=36.0)
+  | | | [ {CDG: (22.0,50.0)} ]
+k-nearest-neighbor(1,(0.0,0.0)) = [ CDG (d=2984.0) ]
+k-nearest-neighbor(2,(0.0,0.0)) = [ CDG (d=2984.0) BKK (d=3656.0) ]
+k-nearest-neighbor(5,(0.0,0.0)) = [ CDG (d=2984.0) BKK (d=3656.0) FRA (d=4349.0) HKG (d=6856.0) LHR (d=8402.0) ]
+k-nearest-neighbor(8,(0.0,0.0)) = [ CDG (d=2984.0) BKK (d=3656.0) FRA (d=4349.0) HKG (d=6856.0) LHR (d=8402.0) ICN (d=9928.0) NRT (d=10069.0) PEK (d=11525.0) ]
+k-nearest-neighbor(10,(0.0,0.0)) = [ CDG (d=2984.0) BKK (d=3656.0) FRA (d=4349.0) HKG (d=6856.0) LHR (d=8402.0) ICN (d=9928.0) NRT (d=10069.0) PEK (d=11525.0) ]
+k-nearest-neighbor(4,(1.0,9.0)) = [ CDG (d=2122.0) BKK (d=3026.0) FRA (d=3445.0) HKG (d=5906.0) ]
+k-nearest-neighbor(4,(2.0,5.0)) = [ CDG (d=2425.0) BKK (d=3145.0) FRA (d=3706.0) HKG (d=6121.0) ]
+k-nearest-neighbor(4,(4.0,5.0)) = [ CDG (d=2349.0) BKK (d=2957.0) FRA (d=3546.0) HKG (d=5869.0) ]
+k-nearest-neighbor(4,(5.0,3.0)) = [ CDG (d=2498.0) BKK (d=2986.0) FRA (d=3653.0) HKG (d=5930.0) ]
+k-nearest-neighbor(4,(5.0,9.0)) = [ CDG (d=1970.0) BKK (d=2650.0) FRA (d=3125.0) HKG (d=5402.0) ]
+k-nearest-neighbor(4,(6.0,5.0)) = [ CDG (d=2281.0) BKK (d=2777.0) FRA (d=3394.0) HKG (d=5625.0) ]
+k-nearest-neighbor(4,(8.0,5.0)) = [ CDG (d=2221.0) BKK (d=2605.0) FRA (d=3250.0) HKG (d=5389.0) ]
+k-nearest-neighbor(4,(9.0,1.0)) = [ CDG (d=2570.0) BKK (d=2770.0) FRA (d=3557.0) HKG (d=5650.0) ]
+clear: successful
+size: 0
+list:
+  [ ]
+Tree structure:
+  [ ]
+nearest-neighbor(0.0,0.0): [not found]
+k-nearest-neighbor(5,(0.0,0.0)) = [ ]

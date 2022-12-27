@@ -1,0 +1,35 @@
+comment:This tests MinK
+initialize:1:0:10:0:10:3
+minK-add:25:SFO
+minK-get-kth
+minK-add:85:IAD
+minK-get-kth
+minK-add:53:DCA
+minK-get-kth
+minK-add:12:BWI
+minK-get-kth
+minK-add:67:JFK
+minK-get-kth
+minK-list
+minK-clear
+minK-add:94:New York
+minK-get-kth
+minK-add:88:Baltimore
+minK-get-kth
+minK-add:55:Seattle
+minK-get-kth
+minK-add:19:San Francisco
+minK-get-kth
+minK-add:26:Chicago
+minK-get-kth
+minK-add:38:Dallas-Fort Worth
+minK-get-kth
+minK-add:67:Washington
+minK-get-kth
+minK-add:42:Los Angeles
+minK-get-kth
+minK-add:34:Dulles
+minK-get-kth
+minK-list
+minK-clear
+minK-list
